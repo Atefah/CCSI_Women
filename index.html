@@ -15,9 +15,11 @@
     .hero{
       width: 100%;
       min-height: 100hv;
-      background-image: url(img/background.jpeg);
+      /* background-image: url(img/background.jpeg);
       background-position: cover;
-      background-size: cover;
+      background-size: cover; */
+      background-color: rgba(234,196,175,255);
+
       padding: 10px 10%;
       overflow: hidden;
       position: relative;
@@ -27,7 +29,7 @@
           text-decoration: none;
           padding: 14px 40px;
           color: #fff;
-          background-image: linear-gradient(45deg, #87adfe , #ff77cd);
+          background-image: linear-gradient(45deg, #87adfe ,rgb(231, 139, 89));
           font-size: 16px;
           border-radius: 30px;
           border-top-right-radius: 0;           
@@ -40,8 +42,10 @@
 
 
     .content{
-      margin-top: 10%;
+      margin-top: 8%;
+      padding: 0 30px;
       max-width: 600px;
+
       padding-bottom: 50px;
 
     }
@@ -57,6 +61,7 @@
     }
     .feature-image{
       width: 530px;
+      height: 200px;
       position: absolute;
       bottom: 0px;
       right: 10%;
@@ -78,7 +83,7 @@
       }
     }
 
-    h1{
+    .title h1{
     margin-top: 150px;
     font-weight: 800px;
     color: transparent;
@@ -105,33 +110,58 @@
     .section{
       width: 100%;
       min-height: 100hv;
+      background-color: antiquewhite;
    
 
     }
-    .container{
+    .containerAbout{
       width: 80%;
       display: block;
       margin: auto;
       padding-top: 100px;
+    }
+    .fade-in{
+      opacity: 0;
+      transition: opacity 250ms ease-in ;
 
     }
+
+    .fade-in.appear{
+      opacity: 1;
+    }
+
     .content-section{
       float: left;
       width: 55%;
-      background: linear-gradient(135deg,255,255,0.1),rgba(255, 255, 255, 0);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      transform: translateX(-50%);
+      background-color: transparent;
     }
+   
+     .content-section, .image-section{
+      transition: opacity 250ms ease-in, transform 400ms ease-in;
+      opacity: 0;
+     }
+     .content-section.appear, .image-section.appear{
+      transform: translateX(0);
+      opacity: 1;
+     }
+     @media screen and (max-width: 1200px ) {
+      .content-section, .image-section{
+      width: 100%;
+     }
+   
+    }
+
     .image-section{
       float: right;
       width: 40%;
+      transform: translateX(50%);
     }
     .image-section img{
       width: 100%;
       height: auto;
     }
+
     .content-section .title{
         text-transform: uppercase;
         font-size: 28px;
@@ -144,6 +174,7 @@
       margin-top: 10px;
 
     }
+ 
     
     
 
@@ -180,39 +211,49 @@
         </div>
       </nav>    
     </div> 
-    <div class="hidd" style="height:200px;"></div>
+    <div class="hidd" style="height:150px;"></div>
 
     <div class="hero">
         <div class="content">
-          <h6>Our Mission</h6>
+          <h6>CCSI WOMEN</h6>
           <p>CCSI-Women-Canada works to promote women’s equality <br>and empowerment in peace and security and sustainable <br> growth.</p>
           <p class="additional-content" style="display: none;">Our network of experienced and talented women experts in specialized areas of competence prepare and deliver training programs, implement capacity building projects, and provide leadership and mentorship to women currently working in those fields or who wish to do so. Among its goals, CCSI-W Canada aims to ensure that the application of sanctions and strategic trade control are respectful and fully compliant with human rights and international humanitarian law.</p>
-          <a href="#" class="read-more-link btn anim">Read More</a>
+          <a href="contact.html" class="btn anim">Contact Us</a>
       </div>
-        <img src="img/Caterina Ventura photo.jpeg" alt="" class="feature-image anim">
+        <img src="img/2023-10-26 16.25.21.png" alt="" class="feature-image anim">
     </div>
-    <div class="hidd" style="height:70px;"></div>
-
     <div class="title">
-      <h1>About us</h1>
+      <h1>OUR MISSION</h1>
+      <div class="hr"></div>
     </div>
 
     <div class="section">
-      <div class="container">
-        <div class="content-section">
+      <div class="containerAbout">
+        <div class="content-section slide-in">
           <div class="content">
-            <p>This is some initial content.</p>
-            <p class="additional-content" style="display: none;">This is additional content that is initially hidden.</p>
+            <p>CCSI-Women-Canada works to promote women’s equality and empowerment in peace and security and sustainable economic growth. Our network of experienced and talented women experts in specialized areas of competence prepare and deliver training programs, implement capacity building projects, and provide leadership and mentorship to women currently working in those fields or who wish to do so. Among its goals, CCSI-W Canada aims to ensure that the application of sanctions and strategic trade control are respectful and fully compliant with human rights and international humanitarian law.</p>
+            <p class="additional-content" style="display: none;">Our network of CCSI experts, including in CCSI Africa and CCSI Asia and Pacific, have conducted training programs for public and privates sector professionals of well over 50 countries assisting governments and the private sector in building their capacity in these areas: Strategic Trade Control and Sanctions policy-making, implementation enhancements, and compliance monitoring Private sector compliance policies and practices for Srategic Trade Control and Sanctions Sanctions implications for human and gender rights Monitoring and enforcement of human and gender rights and protection of humanitarian aid Preventive and protective strategies against cyber security failures, and abuses of cryptocurrencies International terrorism and counter-extremism strategies that respect gender and human rights Gender-balanced mediation and conflict reduction strategies CCSCI’s network of experts have delivered projects in partnership with numerous governmental agencies including Global Affairs Canada, the U.S. Department of State (EXBS/CTR/NDF), The Ministry of Foreign Affairs of Japan, the European Union External Action Service, the African Development Bank, the Gesellschaft für Internationale Zusammenarbeit (GIZ), and companies and institutional investors.</p>
            <div class="button">
             <a href="#" class="read-more-link btn">Read More</a>  
             </div>
           </div>
        </div>
-       <div class="image-section">
+       <div class="image-section slide-in">
         <img src="img/Caterina Ventura photo.jpeg" alt="">
       </div>
       </div>
     </div>
+    <div class="hidd" style="height:50px;"></div>
+    <div class="title">
+      <h1>About the logo and website</h1>
+      <hr class="hr"> 
+    </div>
+    <div class="hidd" style="height:50px;"></div>
+    <div class="logoAndWebsite fade-in">
+      <p>The CCSI-Women-Canada logo and website are are designed by a team of young Afghan designers trained 
+        by the program, Code to Inspire.</p>
+    </div>
+    <div class="hidd" style="height:50px;"></div>
  <footer>
     <div class="container-fluid">
         <div class="row">
