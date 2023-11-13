@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCSI Women Canada</title>
+    <title>CCSI women Canada</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/logo done.png">
-
     <link rel="Stylesheet" type="text/css" href="css/fontawesome-free-6.4.2/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -13,278 +12,392 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <style>
-      
-      .ourteam{
-        margin: 175px 0;
+     .btn{
+      display: inline-block;
+      text-decoration: none;
+      padding: 14px 40px;
+      color:#025196;
+    font-size: large;
+      font-weight: bold;
+      background-color: #fffff7;
+      border: 2px solid #699eca;
+      text-align: center;
+      border-radius: 30px;
+      border-top-right-radius: 0;           
+      transition: 0.5s;
+      animation-delay: 1s;
+    }
+    .btn:hover{
+      border-top-right-radius: 30px;
+    }
+      .containerTeam{
+        width: 100%;
+        margin:0 auto;
 
        
       }
-
-      .btn{
-          display: inline-block;
-          text-decoration: none;
-          padding: 14px 40px;
-          color: #fff;
-          background-image: linear-gradient(45deg, #87adfe ,rgb(231, 139, 89));
-          
-          font-size: 16px;
-          border-radius: 30px;
-          border-top-right-radius: 0;           
-         transition: 0.5s;
-         animation-delay: 1s;
-      }
-      .btn:hover{
-        border-top-right-radius: 30px;
-    }
-   
-
-      .img-box .img-responsive{
-          width: 300px;
-          width: 100%;
-          height: 20rem;
-          background-size: cover;
-          object-fit: cover;
-         
-          
-      }
-      .job-title{
-      color: #777;
-      font-size: 1.5rem;
-      font-weight: 300;
-      text-align: center;
-      }
-
-      .about .additional-conten{
-      font-size: 10px;
-      color: #545454;
-      line-height: 30px;
-      text-align: justify;
-      }
-      .profile{
-       background: white;
-	      box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2) ;
-        padding:0 20px;
-        
-      }
-      .profile .img-box{
-        opacity: 1;
-        display: block;
+      .row{
         position: relative;
-      }
-      .profile h1{
-        font-size: 22px;
-        font-weight: bold;
-        margin-top: 15px;
-        color: rgb(235, 101, 29);
-      }
-      .fade-in{
-      opacity: 0;
-      transition: opacity 250ms ease-in ;
-
-    }
-    .fade-in.appear{
-      opacity: 1;
-
-    }
-      /* .profile h3{
-        font-size: 15px;
-        font-weight: bold;
-        margin-top: 15px;
-      } */
-      .img-box::after{
-        content: '';
-        opacity: 0;
-        background-color: rgba(0, 0, 0, 0.6);
-        position: absolute;
-        right: 0;
-        top: 0;
-        left: 0;
-        bottom: 0;
-      }
-      .img-box ul{
-        margin: 0;
-        padding: 20px 0;
-        position: absolute;
-        z-index: 1;
-        bottom: 0;
-        display: block;
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: 0;
-      }
-      .img-box ul li{
-        width: 30px;
-        height: 30px;
-        border: 1px solid #fff;
-        margin: 3px;
-        padding: 7px;
-        display: inline-block;
-        border-radius: 50%;
+        margin-left: 20%;
         
       }
-      .img-box a{
+       .row .column{
+        /* margin: 0 auto; */
+        border-radius: 10px;
+        border: 2px solid white;
+        position: relative;
+        width: calc(25% - 20px);
+        min-height: 250px;
+        box-sizing: border-box;
+        overflow: hidden;
+        cursor: pointer;
+        
+      }
+   
+      .row .column:before{
+        content: '';
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 0, 0, 1);
+        z-index: 1;
+        transition: .5s;
+        mix-blend-mode: soft-light;
+      } 
+     .row .column:hover:before{
+        bottom: 0;
+      } 
+      .row .column .imgBox{
+        position: relative;
+
+      }
+      
+      .row .column .imgBox img{
+      width: 100%;
+      transition: 5s;
+      }
+     
+      .row .column:hover .imgBox img{
+       transform: scale(1.5);
+      }
+      .row .column .details{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        padding: 10px;
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, .9);
+        width: 100%;
+        transition: .5s;
+        z-index: 2;
+       
+      }
+      /* .row .column:hover .details{
+        bottom: 0;
+      } */
+      .row .column .details h3{
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-weight: 500;
+        font-size: 15px;
+        text-align: right;
+        text-transform: uppercase;
+      }
+
+      .row .column .details h3 span{
+        margin: 0;
+        padding: 0;
+        color: #f00;
+        font-weight: 900;
+        font-size: 14px;
+        text-align: right;
+        text-transform: uppercase;
+        position: relative;
+        top: -5px;
+      }
+      .row .column .details ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        float: right;
+      }
+      .row .column .details ul li{
+        list-style-type: none;
+
+      }
+      .row .column .details ul li a{
+        padding: 0 10px;
         color: #fff;
       }
-      .img-box a:hover{
-        color: #007bff;
+      .row .column .details ul li a .fa-brands{
+        transition: .5s;
       }
-      .img-box:hover:after{
-        opacity: 1;
-      }
-      .img-box:hover ul{
-        opacity: 1;
-      }
-      .img-box a:hover li{
-        color: #007bff;
-        border: 1px solid #007bff;
-      }
-      .img-box:after, .img-box ul, .img-box ul li{
-        transition: all 0.5s ease-in-out 0s;
+      .row .column .details ul li a:hover .fa-brands{
+        transform: rotateY(360deg);
+        color: #f00;
       }
 
-   .title h1 {
-    font-size: 40px;
-    font-style: italic;
-    font-weight: bold;
-    color: transparent;
-    background-image: url(img/1495569_9883f.gif);
-    background-position: center;
-    -webkit-background-clip: text;
+      @media (max-width: 992px){
+        .containerTeam{
+          width: 90%;
+          margin:20px auto;
+        }
+        .row .column{
+          width: calc(50% - 20px);
+          margin-bottom: 20px;
+         
+        }
+        .ModalContent{
+          display: block;
+          width: 100%;
+        }
+     
+      }
+
+      @media (max-width: 700px){
+      
+        .ModalContent{
+          display: block;
+          width: 100%;
+        }
+        .content-right{
+          display: block;
+          width: 100%;
+        }
+     
+      }
+      @media (max-width: 600px){
+        .containerTeam{
+          width: 95%;
+          margin:20px auto;
+        }
+        .row .column{
+          width: calc(100% - 20px);
+          margin-bottom: 20px;
+         
+        }
+        .ModalContent{
+          display: block;
+          width: 100%;
+        }
+     
+      }
+   
 
 
-   }
+.content-right img{
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+
+}
+.ModalContent{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    margin: 5% auto;
+    position: absolute;
+    transform: translateX(100%);
+    transition: 0.3S;
+    
+}
+.content-left{
+    /* flex-basis: 77%; */
+    padding: 20px;
+
+
+}
+.content-left {
+  margin-left: 0;
+}
+.content-left h1{
+  color: black;
+}
+
+.content-right{
+    /* flex-basis: 28%; */
+    text-align: center;
+}
+.ourTeam{
+    width: 80%;
+    position: relative;
+    margin: 0px auto;
+    overflow: hidden;
+} 
+.ourTeam .detailsOurTeam{
+
+    height: 850px;
+}
+#ModalContent1{
+  transform: translateX(0px);
+}
+
+/* #modal1{
+  border: 2px solid orange;
+} */
     </style>
 </head>
 <body onscroll="reswize()">     
     <!-- header  -->
-     <div class="fixed-top">
-      <nav class="navbar navbar-expand-lg navbar-dark linear-gradient " id="navbar">
+    <header>    
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark b">
         <div class="container">
-            <a class="navbar-brand" href="#" >
-              <img  src="img/CCSI Women.jpeg" alt="" id="logo" class="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="nav">
-                <ul class="nav navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://ccsi.global/">CCSI Family
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="LeaderShipAndExpirts.html">Leadership & Experts</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="contact.html">Contact</a>
-                  </li>
+          <a class="navbar-brand" href="#" >
+            <img  src="img/Finalized of CCSI Women done.png" alt="" id="logo" class="logo">
+          </a>
+          <button class="navbar-toggler bg-warning" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://ccsi.global/" id="link">CCSI Family
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="index.html" id="link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="LeaderShipAndExpirts.html" id="link">Leadership & Experts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="contact.html" id="link">Contact</a>
+                </li>
+              </ul>
+          </div>
+      </div>
+      </nav>
+  
+     <!-- <img src="./img/colored without background.png" alt="" class="feature-image anim"> -->
+    </header>
+    <div class="hero">
+      <div class="content">
+        <h6 class="anim">LeaderShip And Expirts</h6>
+      </div> 
+    </div>
+    <div class="hidd" style="height:150px;"></div>
+    <section class="ourTeam">
+        <div class="containerTeam">
+          <div class="row mgt50px">
+
+              <div class="column " onclick="openModal1()" id="modal1">
+                <div class="contentWithImage">
+                  <div class="imgBox">
+                    <img src="img/Caterina Ventura photo.jpeg" alt="">
+                  </div>
+                  <div class="details">
+                    <h3>Caterina Ventura <br> <span>Chief Executive Officer</span></h3>
+                    <ul>
+                     <li><a href=""><i class="fa-brands fa-twitter"></i></i></a></li>
+                     <li><a href=""><i class="fa-brands fa-facebook"></i></i></a></li>
+                     <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="column " onclick="openModal2()" id="modal2">
+                <div class="imgBox">
+                  <img src="img/Loraine Rickard-Martin photo.jpeg" alt="">
+                </div>
+                <div class="details">
+                  <h3>Loraine Rickard <br> <span> Director</span></h3>
+                  <ul>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></i></a></li>
+                   <li><a href=""><i class="fa-brands fa-facebook"></i></i></a></li>
+                   <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
                 </ul>
+                </div>
+              </div>
+
+              <div class="column" onclick="openModal3()" id="modal3">
+                <div class="imgBox">
+                  <img src="img/Enrico Carisch photo.jpeg" alt="">
+                </div>
+                <div class="details">
+                  <h3>Enrico Carisch <br> <span> Director</span></h3>
+                  <ul>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></i></a></li>
+                   <li><a href=""><i class="fa-brands fa-facebook"></i></i></a></li>
+                   <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                 </ul>
+                </div>
+              </div>
+             
             </div>
         </div>
-      </nav>    
-    </div> 
-  
-   
-    <section class="ourteam">
-      <div class="title">
-        <h1>ABOUT US</h1>
-        <div class="hr"></div>
-      </div>
-        <div class="container">
-          <div class="row">
-
-            <div class="col-md-4 profile text-center ">
-              <div class="img-box">
-                <img src="img/Caterina Ventura photo.jpeg" alt="" class="img-responsive">
-                <ul>
-                  <li><a href=""><i class="fa-brands fa-twitter"></i></i></a></li>
-                 <li><a href=""><i class="fa-brands fa-facebook"></i></i></a></li>
-                 <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-               </ul>
-              </div>
-              <h1>Caterina Ventura</h1>
-              <p class="job-title">Chief Executive Officer</p>
-              <p class="about">
-                Caterina Ventura is Chief Executive Officer of CCSI-Women-Canada. She is an international lawyer with extensive experience in a range of political, economic and human rights issues, at The Hague, in the United Nations, Human Rights and Economic Law Division, at the Canadian Human Rights Commission, and in the Ontario Human Rights Commission.
-              </p>
-                <p class="additional-content" style="display: none;">
-                  She served in Global Affairs  Canada in a variety of positions from 1999  to 2021,  recently as  High Commissioner to Brunei, where she was responsible for country policy and programming coherence on trade, political, public affairs, and consular and administration. 
-
-                  As Senior Adviser, Partnerships for Development Innovation Branch, she was engaged in the development of the Department’s Innovation for Development policy and led its implementation through connecting social impact entrepreneurs with investors in order to provide needed goods and services to countries in development. 
-                  
-                  While representing the Government of Canada at the United Nations,  she formulated political strategies and advanced and promoted Canadian policies, priorities and interests on the Middle-East, Asia, counter-terrorism, and sanctions. 
-                  
-                  She facilitated collaboration among the UN Secretariat, member states and stakeholders to advance common objectives, participated in and chaired negotiations and provided the Government with timely, quality reporting analysis on high profile, often controversial Security Council and General Assembly issues including Afghanistan, Libya, Syria, Iraq and Israel/Palestine. She was  instrumental in facilitating the Canadian Government’s sponsorship of the first UN system-wide training on sanctions monitoring and implementation, implemented by Compliance and Capacity Skills International (CCSI) in 2012-2013.
-               </p>
-               <button  class="read-more-link btn">Read More</button>
-            </div>
-
-            <div class="col-md-4 profile text-center">
-              <div class="img-box">
-                <img src="img/Loraine3.jpg" alt="" class="img-responsive">
-                <ul>
-                  <li><a href=""><i class="fa-brands fa-twitter"></i></i></a></li>
-                 <li><a href=""><i class="fa-brands fa-facebook"></i></i></a></li>
-                 <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-               </ul>
-              </div>
-                 <h1>Loraine Rickard</h1>
-                  <p class="job-title">Director</p>
+        <div class="detailsOurTeam">
+            <div class="ModalContent row" id="ModalContent1">
+                <div class="content-left col-md-8 col-sm-12 col-lg-8">
+                  <h1>Caterina Ventura</h1>
+                  <h3>Chief Executive Officer</h3>
                   <p class="about">
-                    Loraine Rickard-Martin is a Director  of CCSI-Women-Canada. She co-founded Compliance and Capacity Skills International (CCSI) in 2011. She served as its Chief Executive Officer until July 2023 and continues to chair CCSI’s Board from which she oversees CCSI’s program of delivering training projects focused on capacity building assistance
+                    Caterina Ventura is Chief Executive Officer of CCSI-Women-Canada. She is an international lawyer with extensive experience in a range of political, economic and human rights issues, at The Hague, in the United Nations, Human Rights and Economic Law Division, at the Canadian Human Rights Commission, and in the Ontario Human Rights Commission.
+                  She served in Global Affairs Canada in a variety of positions from 1999 to 2021, recently as High Commissioner to Brunei, where she was responsible for country policy and programming coherence on trade, political, public affairs, and consular and administration. As Senior Adviser, Partnerships for Development Innovation Branch, she was engaged in the development of the Department’s Innovation for Development policy and led its implementation through connecting social impact entrepreneurs with investors in order to provide needed goods and services to countries in development.
                   </p>
                     <p class="additional-content" style="display: none;">
-                      for more effective sanctions enforcement and strategic trade control compliance, for officials in the public and private sectors.  CCSI collaborates on projects that are funded by numerous agencies including the US Department of State (EXBS/CTR), the US Department of Energy, Global Affairs Canada, Gesellschaft für Internationale Zusammenarbeit (GIZ)
-                      and the African Development Bank. She is also Adviser to CCSI Asia and Pacific.
-                      
-                      As CCSI’s CEO, she co-managed the first United Nations system-wide training on sanctions compliance and implementation (2011-2012) funded by the Government of Canada, that included officials of member states and the UN system of the Secretariat, UN programs, agencies, sanctions monitors, and civil society. She also co-managed sanctions reform processes such as the High-Level Review of United Nations Sanctions  (2915), the follow-on Assessment of the HLR (2017), and co-implementation of the Best Practices Guide for Chairs and Members of UN Sanctions Committees (2018 and 2020). She implemented the “Workshop on Sanctions and Gender” held in Nairobi in 2019, funded by Global Affairs Canada and the Government of the Netherlands. She advised the African Union’s Peace and Security Council on sanctions issues with the drafting of an AU sanctions manual (2012).
+                      While representing the Government of Canada at the United Nations, she formulated political strategies and advanced and promoted Canadian policies, priorities and interests on the Middle-East, Asia, counter-terrorism, and sanctions. She facilitated collaboration among the UN Secretariat, member states and stakeholders to advance common objectives, participated in and chaired negotiations and provided the Government with timely, quality reporting analysis on high profile, often controversial Security Council and General Assembly issues including Afghanistan, Libya, Syria, Iraq and Israel/Palestine. She was instrumental in facilitating the Canadian Government’s sponsorship of the first UN system-wide training on sanctions monitoring and implementation, implemented by Compliance and Capacity Skills International (CCSI) in 2012-2013.
                    </p>
                   <button  class="read-more-link btn">Read More</button>
+                </div>
+                <div class="content-right col-md-4 col-sm-12 col-lg-4">
+                    <img src="./img/Caterina Ventura photo.jpeg" alt="">
+                </div>
             </div>
-
-            <div class="col-md-4 profile text-center">
-              <div class="img-box">
-                <img src="img/Enrico3.jpg" alt="" class="img-responsive">
-                <ul>
-                  <li><a href=""><i class="fa-brands fa-twitter"></i></i></a></li>
-                 <li><a href=""><i class="fa-brands fa-facebook"></i></i></a></li>
-                 <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-               </ul>
-              </div>
-              <h1>Enrico Carisch</h1>
-                <p class="job-title">Director</p>
+    
+            <div class="ModalContent" id="ModalContent2">
+              <div class="content-left col-md-8 col-sm-12 col-lg-8">
+                <h1>Loraine Rickard</h1>
+                <h3>Director</h3>
                 <p class="about">
-                  Enrico Carisch is Director of CCSI-Women-Canada and co-founder and Chief Executive Officer of CCSI where he leads its training  programs for public and privates sector professionals that have been conducted in well over  50 countries.  CCSI’s training programs  assist governments and the private sector  in building their capacity</p>
-                  <p class="additional-content" style="display: none;">
-                    in non-proliferation, maritime, port and cyber security and related financial integrity practices in strategic trade control and sanctions.  
-                    Prior to co-founding CCSI in 2011, he served the United Nations Security Council as a financial and natural resources sanctions monitor. He leads and conducts research and capacity-building projects for conflict-affected regions and societies, and frequently authors and co-authors articles and manuals on the  wide range of security topics covered in CCSI’s training programs.  He co-managed the first UN system-wide training program on sanctions, funded by Global Affairs Canada (2012-2013), and the consultative process for the High Level Review of UN Sanctions Practices (2014) as well as the development of the Best Practices Guide for Chairs and Members of United Nations Sanctions Committees (2020) that includes guidance and policy on Gender Equality and UN Sanctions, specifically the risks of limiting UN sanctions to Conflict Related Sexual Violence (CRSV), gender competence in the UN sanctions system; and improving UN sanctions to prevent gender-related threats and violence more effectively. He has authored articles on the gender implications of sanctions, as follows:
-                    Sanctions: Gender, violence and the Security Council. Time for a rethink? (World ECR)
-                    https://www.worldecr.com/archive/sanctions-gender-violence-and-the-security-council-time-for-a-rethink/
+                    Loraine Rickard-Martin is a Director of CCSI-Women-Canada. She co-founded Compliance and Capacity Skills International (CCSI) in 2011. She served as its Chief Executive Officer until July 2023 and continues to chair CCSI’s Board from which she oversees CCSI’s program of delivering training projects focused on capacity building assistance
+                    for more effective sanctions enforcement and strategic trade control compliance, for officials in the public and private sectors. CCSI collaborates on projects that are funded by numerous agencies including the US Department of State (EXBS/CTR), the US Department of Energy, Global Affairs Canada, Gesellschaft für Internationale Zusammenarbeit (GIZ) and the African Development Bank.
                  </p>
-                 <button  class="read-more-link btn">Read More</button>
+                  <p class="additional-content" style="display: none;">
+                    She is also Adviser to CCSI Asia and Pacific. As CCSI’s CEO, she co-managed the first United Nations system-wide training on sanctions compliance and implementation (2011-2012) funded by the Government of Canada, that included officials of member states and the UN system of the Secretariat, UN programs, agencies, sanctions monitors, and civil society. She also co-managed sanctions reform processes such as the High-Level Review of United Nations Sanctions (2915), the follow-on Assessment of the HLR (2017), and co-implementation of the Best Practices Guide for Chairs and Members of UN Sanctions Committees (2018 and 2020). She implemented the “Workshop on Sanctions and Gender” held in Nairobi in 2019, funded by Global Affairs Canada and the Government of the Netherlands. She advised the African Union’s Peace and Security Council on sanctions issues with the drafting of an AU sanctions manual (2012).
+                 </p>
+                <button  class="read-more-link btn">Read More</button>
+              </div>
+                <div class="content-right col-md-4 col-sm-12 col-lg-4">
+                    <img src="./img/Loraine Rickard-Martin photo.jpeg" alt="">
+                </div>
             </div>
+            <div class="ModalContent" id="ModalContent3">
+              <div class="content-left col-md-8 col-sm-12 col-lg-8">
+                <h1>Enrico Carisch</h1>
+                <h3>Director</h3>
+                <p class="about">
+                  Enrico Carisch is Director of CCSI-Women-Canada and co-founder and Chief Executive Officer of CCSI where he leads its training programs for public and privates sector professionals that have been conducted in well over 50 countries. CCSI’s training programs assist governments and the private sector in building their capacity
 
-
-
-
-          </div>
-        </div>
-    </section>
-<footer>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 f-col">
-                <div>
-                  <img  src="img/CCSI Women.jpeg" alt="" id="logo" class="logo">
+                  in non-proliferation, maritime, port and cyber security and related financial integrity practices in strategic trade control and sanctions. Prior to co-founding CCSI in 2011, he served the United Nations Security Council as a financial and natural resources sanctions monitor.                </p>
+                  <p class="additional-content" style="display: none;">
+                    He leads and conducts research and capacity-building projects for conflict-affected regions and societies, and frequently authors and co-authors articles and manuals on the wide range of security topics covered in CCSI’s training programs. He co-managed the first UN system-wide training program on sanctions, funded by Global Affairs Canada (2012-2013), and the consultative process for the High Level Review of UN Sanctions Practices (2014) as well as the development of the Best Practices Guide for Chairs and Members of United Nations Sanctions Committees (2020) that includes guidance and policy on Gender Equality and UN Sanctions, specifically the risks of limiting UN sanctions to Conflict Related Sexual Violence (CRSV), gender competence in the UN sanctions system; and improving UN sanctions to prevent gender-related threats and violence more effectively. He has authored articles on the gender implications of sanctions, as follows: Sanctions: Gender, violence and the Security Council. Time for a rethink? (World ECR) https://www.worldecr.com/archive/sanctions-gender-violence-and-the-security-council-time-for-a-rethink/
+                 </p>
+                <button  class="read-more-link btn">Read More</button>
+              </div>
+                <div class="content-right col-md-4 col-sm-12 col-lg-4">
+                    <img src="./img/Enrico Carisch photo.jpeg" alt="">
                 </div>
             </div>
         </div>
-    </div> 
-  </footer>
+    </section>
+
+    <div class="hidd" style="height:150px;"></div>
+    <footer>
+      <div class="container-fluid">
+          <div>
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 f-col">
+                  <div>
+                      <img class="footer-logo" src="img/Finalized of CCSI Women done.png" alt="">
+                  </div>
+              </div>
+          </div>
+      </div> 
+    </footer>
+
 </body>
 </html>
-<script type="text/javascript" src="js/script.js"></script>
-
+ <script type="text/javascript" src="js/script.js"></script> 

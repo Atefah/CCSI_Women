@@ -12,298 +12,68 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <style>
-       .contactsection{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100hv;
-        /* background: white; */
-       
-       }
        .btn{
-          display: inline-block;
-          text-decoration: none;
-          padding: 14px 40px;
-          color: #fff;
-          background-image: linear-gradient(45deg, #87adfe ,rgb(231, 139, 89));
-          font-size: 16px;
-          border-radius: 30px;
-          border-top-right-radius: 0;           
-         transition: 0.5s;
-         animation-delay: 1s;
-      }
-      .btn:hover{
-        border-top-right-radius: 30px;
-    }
-   
-
-       /* section::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 100%;
-        background: #fff38e;
-       } */
-
-     .containerSection{
-        position: relative;
-        min-width: 1100px;
-        min-height: 550px;
-        display: flex;
-        z-index: 1000;
-        background: #fff; 
-        box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
-        } 
-
-       .containerSection .contactInfo{
-            position: absolute;
-            top: 40px;
-            width: 350px;
-            height: calc(100% - 80px);
-            background: rgb(201, 129, 90);
-            z-index: 1;
-            padding: 40px;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            justify-content: space-between;
-            background: linear-gradient(135deg,255,255,0.1),rgba(255, 255, 255, 0);
-            -webkit-backdrop-filter: blur(10px);
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-            /* box-shadow: 0 20px 25px rgba(192, 37, 37, 0.15); */
-            
-       }
-       .containerSection .contactInfo h1{
-        color: #fff;
-       }
-       .containerSection .contactForm{
-        position: absolute;
-        padding: 70px 50px;
-        padding-left: 250px;
-        margin-left: 150px;
-        width: calc(100% - 150px);
-        height: 100%;
-        background: white;
-        overflow-y: hidden;
-        background: linear-gradient(135deg,255,255,0.1),rgba(255, 255, 255, 0);
-        -webkit-backdrop-filter: blur(10px);
-        border-radius: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-       } 
-       .information{
-        color: white;
-        text-decoration: none;
-       
-       
-       }
-       .information li{
-           padding: 10px 0px;
-       }
-
-       .containerSection .contactInfo ul.sci{
-        position: relative;
-        display: flex;
-        
-       }
-       .containerSection .contactInfo ul.sci li{
-        margin-right: 15px;
-        font-size: 40px;
-       }
-       .fa-brands.fa-facebook:hover,
-      .fa-brands.fa-twitter:hover,
-      .fa-brands.fa-instagram:hover{
-      color: #00cde8;
-      }
-      .fa-brands.fa-facebook,
-      .fa-brands.fa-twitter,
-      .fa-brands.fa-instagram{
-      color: white;
-      }
-       .containerSection .contactForm .formBox{
-          position: relative;
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap;
-          padding-top: 30px;
-       }
-       .containerSection .contactForm .formBox .inputBox{
-        position: relative;
-        margin-bottom: 35px;
-       }
-       .containerSection .contactForm .formBox .inputBox.w50{
-          width: 47%;
-       }
-       .containerSection .contactForm .formBox .inputBox.w100{
-          width: 100%;
-       }
-       .containerSection .contactForm .formBox .inputBox input,
-       .containerSection .contactForm .formBox .inputBox textarea{
-          width: 100%;
-          resize: none;
-          padding: 5px 0;
-          font-size: 18px;
-          font-weight: 300px;
-          color: #333;
-          border: none;
-          outline: none;
-          border-bottom: 1px solid #777;
-       }
-       .containerSection .contactForm .formBox .inputBox textarea{
-        height: 120px;
-       }
-       .containerSection .contactForm .formBox .inputBox span{
-        position: absolute;
-        left: 0;
-        padding: 5px 0;
-        pointer-events: none;
-        font-size: 18px;
-        font-weight: 300px;
-        transition: 0.3s;
-       }
-       .containerSection .contactForm .formBox .inputBox input:focus,
-       .containerSection .contactForm .formBox .inputBox input:valid ,
-       .containerSection .contactForm .formBox .inputBox textarea:focus,
-       .containerSection .contactForm .formBox .inputBox textarea:valid{
-          transform: translateX(-20px);
-          font-size: 12px;
-          font-weight: 400;
-          letter-spacing: 1px;
-          color: #095a55;
-          font-weight: 500;
-          margin-left: 30px;
-
-       }
-       .containerSection .contactForm .formBox .inputBox input[type="submit"]{
-        position: relative;
-        cursor: pointer;
-        background: #095a55;
-        color: #fff;
-        border: none;
-        max-width: 150px;
-        padding: 12px;
-       }
-       .containerSection .contactForm .formBox .inputBox input[type="submit"]:hover{
-        background: #0d948b;
-       }
-
-       /* make it responsive */
-       @media screen and (max-width: 1200px ){
-        .containerSection{
-          width: 90%;
-          min-width: auto;
-          margin: 20px;
-          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
-        }
-        .containerSection .contactInfo{
-          top: 0;
-          height: 500px;
-          position: relative;
-          box-shadow: none;
-        }
-        .containerSection .contactForm{
-          position: relative;
-          width: calc(100% -350px);
-          padding-left: 0;
-          margin-left: 0;
-          padding: 40px;
-          height: 550px;
-
-        }
-       }
-
-       @media screen and (max-width: 991px ){
-        section{
-          background: #fff;
-
-        }
-        section::before{
-            display: none;
-
-        }
-        .containerSection{
-          display: flex;
-          flex-direction: column-reverse;
-        }
-        .containerSection{
-          display: flex;
-          flex-direction: column-reverse;
-        }
-        .containerSection .contactForm{
-          width: 100%;
-          height: auto;
-        }
-        .containerSection .contactInfo{
-          width: 100%;
-          height: auto;
-          flex-direction: row;
-        }
-        .containerSection .contactInfo ul.sci{
-          position: relative;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-       }
-       @media screen and (max-width: 600px ){
-          .containerSection .contactForm{
-            padding: 25px;
-          }
-
-          .containerSection .contactInfo{
-            padding: 25px;
-            flex-direction: column;
-            align-items: flex-start;
-          }
-          .containerSection .contactInfo ul.sci{
-           margin-top: 40px;
-        }
-        .containerSection .contactForm .formBox .inputBox.inputBox.w50{
-          width: 100%;
-        }
-
-       }
-
+		display: inline-block;
+		text-decoration: none;
+		padding: 14px 40px;
+		color:#025196;
+	font-size: large;
+    font-weight: bold;
+    background-color: #fffff7;
+    border: 2px solid #699eca;
+    text-align: center;
+		border-radius: 30px;
+		border-top-right-radius: 0;           
+	   transition: 0.5s;
+	   animation-delay: 1s;
+	}
+	.btn:hover{
+	  border-top-right-radius: 30px;
+  }
     </style>
 </head>
 <body onscroll="reswize()">     
     <!-- header  -->
-    <div class="fixed-top">
-      <nav class="navbar navbar-expand-lg navbar-dark linear-gradient " id="navbar">
+    <header>    
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark b">
         <div class="container">
-            <a class="navbar-brand" href="#" >
-              <img  src="img/CCSI Women.jpeg" alt="" id="logo" class="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="nav">
-                <ul class="nav navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://ccsi.global/">CCSI Family
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="LeaderShipAndExpirts.html">Leadership & Experts</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="contact.html">Contact</a>
-                  </li>
-                </ul>
-            </div>
-        </div>
-      </nav>    
-    </div> 
+          <a class="navbar-brand" href="#" >
+            <img  src="img/Finalized of CCSI Women done.png" alt="" id="logo" class="logo">
+          </a>
+          <button class="navbar-toggler bg-warning" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://ccsi.global/" id="link">CCSI Family
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="index.html" id="link">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="LeaderShipAndExpirts.html" id="link">Leadership & Experts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="contact.html" id="link">Contact</a>
+                </li>
+              </ul>
+          </div>
+      </div>
+      </nav>
+  
+     <!-- <img src="./img/colored without background.png" alt="" class="feature-image anim"> -->
+    </header>
+    <div class="hero">
+      <div class="content">
+        <h6 class="anim">CONTACT US</h6>
+      </div> 
+    </div>
+
     <div class="hidd" style="height:200px;"></div>
 
-    <div class="title">
+    <div class="titleSection">
       <h1>CONTACT US</h1>
       <div class="hr"></div>
     </div>
@@ -333,9 +103,6 @@
                   <li><a href=""><i class="fa-brands fa-twitter"></i></i></a></li>
                   <li><a href=""><i class="fa-brands fa-facebook"></i></i></a></li>
                   <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                  <!-- <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
-                  <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li> -->
                 </ul>
             </div>
             <div class="contactForm">
@@ -365,21 +132,20 @@
               </div>
             </div>
         </div>
-
   </section>
+  
   <div class="hidd" style="height:150px;"></div>
-
-<footer>
+  <footer>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 f-col">
                 <div>
-                  <img  src="img/CCSI Women.jpeg" alt="" id="logo" class="logo">
+                    <img class="footer-logo" src="img/Finalized of CCSI Women done.png" alt="">
                 </div>
             </div>
         </div>
     </div> 
-  </footer>  
+  </footer>
 
 </body>
 </html>

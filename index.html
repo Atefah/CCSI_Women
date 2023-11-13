@@ -1,270 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCSI women Canada</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/logo done.png">
-    <link rel="Stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="Stylesheet" type="text/css" href="css/fontawesome-free-6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <style>
+  <style>
+ .btn{
+		display: inline-block;
+		text-decoration: none;
+		padding: 14px 40px;
+		color:#025196;
+	font-size: large;
+    font-weight: bold;
+    background-color: #fffff7;
+    border: 2px solid #699eca;
+    text-align: center;
+		border-radius: 30px;
+		border-top-right-radius: 0;           
+	   transition: 0.5s;
+	   animation-delay: 1s;
+	}
+	.btn:hover{
+	  border-top-right-radius: 30px;
+  }
+  .hero{
+    width: 100vw;
+    height: 100vh;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+    /* background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./img/background\ women1-01.jpeg'); */
+    background-image:url('./img/background\ women1-01.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-clip-path: ellipse(71% 59% at 50% 40%);
+    clip-path: ellipse(71% 59% at 50% 40%);
+  
+    
 
-    .hero{
-      width: 100%;
-      min-height: 100hv;
-      /* background-image: url(img/background.jpeg);
-      background-position: cover;
-      background-size: cover; */
-      background-color: rgba(234,196,175,255);
+  }
 
-      padding: 10px 10%;
-      overflow: hidden;
-      position: relative;
-    }
-  .btn{
-          display: inline-block;
-          text-decoration: none;
-          padding: 14px 40px;
-          color: #fff;
-          background-image: linear-gradient(45deg, #87adfe ,rgb(231, 139, 89));
-          font-size: 16px;
-          border-radius: 30px;
-          border-top-right-radius: 0;           
-         transition: 0.5s;
-         animation-delay: 1s;
-      }
-      .btn:hover{
-        border-top-right-radius: 30px;
-    }
+  .about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    padding-bottom: 3rem;
+  }
 
-
-    .content{
-      margin-top: 8%;
-      padding: 0 30px;
-      max-width: 600px;
-
-      padding-bottom: 50px;
-
-    }
-    .content h6{
-      font-size: 70px;
-      color: #222;
-
-    }
-    .content p{
-      margin: 10px 0px 30px;
-      color: #333;
-      animation-delay: 0.5s;
-    }
-    .feature-image{
-      width: 530px;
-      height: 200px;
-      position: absolute;
-      bottom: 0px;
-      right: 10%;
-      
-    }
-    .feature-image.anim{
-      animation-delay: 1.5s;
-    }
-    .anim{
-      opacity: 0;
-      transform: translateY(30px);
-      animation: moveup 0.5s linear forwards;
-    }
-
-    @keyframes moveup{
-      100%{
-        opacity: 1;
-        transform: translateY(0px);
-      }
-    }
-
-    .title h1{
-    margin-top: 150px;
-    font-weight: 800px;
-    color: transparent;
-    background-image: url(img/1495569_9883f.gif);
-    background-position: center;
-    -webkit-background-clip: text;
-
-   }
-
-/* 
-   .cart{
-    width: 500px;
-    height: 300px;
-    margin: 200px;
-   }
-   .glass{
-    background: linear-gradient(135deg,255,255,0.1),rgba(255, 255, 255, 0);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-   } */
-
-    .section{
-      width: 100%;
-      min-height: 100hv;
-      background-color: antiquewhite;
+  .about .row .video-container{
+    flex: 1 1 30rem;
+    position: relative;
+   
    
 
-    }
-    .containerAbout{
-      width: 80%;
-      display: block;
-      margin: auto;
-      padding-top: 100px;
-    }
-    .fade-in{
-      opacity: 0;
-      transition: opacity 250ms ease-in ;
+  }
+  .about .row .video-container img{
+    width: 100%;
+    border: 1.5rem solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    height: 100%;
+    object-fit: cover;
 
-    }
-
-    .fade-in.appear{
-      opacity: 1;
-    }
-
-    .content-section{
-      float: left;
-      width: 55%;
-      transform: translateX(-50%);
-      background-color: transparent;
-    }
-   
-     .content-section, .image-section{
-      transition: opacity 250ms ease-in, transform 400ms ease-in;
-      opacity: 0;
-     }
-     .content-section.appear, .image-section.appear{
-      transform: translateX(0);
-      opacity: 1;
-     }
-     @media screen and (max-width: 1200px ) {
-      .content-section, .image-section{
-      width: 100%;
-     }
-   
-    }
-
-    .image-section{
-      float: right;
-      width: 40%;
-      transform: translateX(50%);
-    }
-    .image-section img{
-      width: 100%;
-      height: auto;
-    }
-
-    .content-section .title{
-        text-transform: uppercase;
-        font-size: 28px;
-    }
-    .content-section .content h3{
-      margin-top: 20px;
-      color: #333;
-    }
-    .content-section .content p{
-      margin-top: 10px;
-
-    }
+  }
  
-    
-    
+  .about .row .video-container h3{
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    font-size: 3rem;
+   background:rgba(255,255,255, 0.8);
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+    color: black;
+    font-weight: bold;
+  }
+  .about .row .detailsAbout{
+    flex: 1 1 20rem;
+    padding: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: 10px;
 
-    </style>
+
+  }
+  .about .row .detailsAbout h3{
+    font-size: 3rem;
+    color: #333;
+    padding: .5rem 3rem;
+
+  }
+  .about .row .detailsAbout p{
+    font-size: 1.5rem;
+    color: #999;
+    padding:0 2rem;
+    line-height: 1.5;
+
+  }
+
+
+  </style>
 </head>
-<body onscroll="reswize()">     
-    <!-- header  -->
-    <div class="fixed-top">
-      <nav class="navbar navbar-expand-lg navbar-dark linear-gradient" id="navbar">
-        <div class="container">
-            <a class="navbar-brand " href="#" >
-              <img  src="img/CCSI Women.jpeg" alt="" id="logo" class="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="nav">
-                <ul class="nav navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://ccsi.global/">CCSI Family
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="index.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="LeaderShipAndExpirts.html">Leadership & Experts</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-                </ul>
-            </div>
+<body>
+
+  <header>    
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark b">
+      <div class="container">
+        <a class="navbar-brand" href="#" >
+          <img  src="img/Finalized of CCSI Women done.png" alt="" id="logo" class="logo">
+        </a>
+        <button class="navbar-toggler bg-warning" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="https://ccsi.global/" id="link">CCSI Family
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html" id="link">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="LeaderShipAndExpirts.html" id="link">Leadership & Experts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="contact.html" id="link">Contact</a>
+              </li>
+            </ul>
         </div>
-      </nav>    
+    </div>
+    </nav>
+
+   <!-- <img src="./img/colored without background.png" alt="" class="feature-image anim"> -->
+  </header>
+  <div class="hero">
+    <div class="content">
+      <h6 class="anim">CCSI WOMEN</h6>
+      <p class="anim">CCSI-Women-Canada works to promote women’s equality and <br>empowerment in peace and security and sustainable growth.</p>
+      <a href="contact.html" class="btn anim">Contact Us</a>
     </div> 
-    <div class="hidd" style="height:150px;"></div>
+  </div>
+   
 
-    <div class="hero">
-        <div class="content">
-          <h6>CCSI WOMEN</h6>
-          <p>CCSI-Women-Canada works to promote women’s equality <br>and empowerment in peace and security and sustainable <br> growth.</p>
-          <p class="additional-content" style="display: none;">Our network of experienced and talented women experts in specialized areas of competence prepare and deliver training programs, implement capacity building projects, and provide leadership and mentorship to women currently working in those fields or who wish to do so. Among its goals, CCSI-W Canada aims to ensure that the application of sanctions and strategic trade control are respectful and fully compliant with human rights and international humanitarian law.</p>
-          <a href="contact.html" class="btn anim">Contact Us</a>
+   <div class="hidd" style="height:150px;"></div>
+   <section class="about" id="about" style="background-color: #fffff7;">
+    <div class="row">
+      <div class="video-container col-md-5 fade-in">
+        <img src="./img/women 2.jpeg"  alt="" >
+        <h3>OUR MISSION</h3>
       </div>
-        <img src="img/2023-10-26 16.25.21.png" alt="" class="feature-image anim">
-    </div>
-    <div class="title">
-      <h1>OUR MISSION</h1>
-      <div class="hr"></div>
-    </div>
 
-    <div class="section">
-      <div class="containerAbout">
-        <div class="content-section slide-in">
-          <div class="content">
-            <p>CCSI-Women-Canada works to promote women’s equality and empowerment in peace and security and sustainable economic growth. Our network of experienced and talented women experts in specialized areas of competence prepare and deliver training programs, implement capacity building projects, and provide leadership and mentorship to women currently working in those fields or who wish to do so. Among its goals, CCSI-W Canada aims to ensure that the application of sanctions and strategic trade control are respectful and fully compliant with human rights and international humanitarian law.</p>
-            <p class="additional-content" style="display: none;">Our network of CCSI experts, including in CCSI Africa and CCSI Asia and Pacific, have conducted training programs for public and privates sector professionals of well over 50 countries assisting governments and the private sector in building their capacity in these areas: Strategic Trade Control and Sanctions policy-making, implementation enhancements, and compliance monitoring Private sector compliance policies and practices for Srategic Trade Control and Sanctions Sanctions implications for human and gender rights Monitoring and enforcement of human and gender rights and protection of humanitarian aid Preventive and protective strategies against cyber security failures, and abuses of cryptocurrencies International terrorism and counter-extremism strategies that respect gender and human rights Gender-balanced mediation and conflict reduction strategies CCSCI’s network of experts have delivered projects in partnership with numerous governmental agencies including Global Affairs Canada, the U.S. Department of State (EXBS/CTR/NDF), The Ministry of Foreign Affairs of Japan, the European Union External Action Service, the African Development Bank, the Gesellschaft für Internationale Zusammenarbeit (GIZ), and companies and institutional investors.</p>
-           <div class="button">
-            <a href="#" class="read-more-link btn">Read More</a>  
-            </div>
-          </div>
-       </div>
-       <div class="image-section slide-in">
-        <img src="img/Our-mission.jpeg" alt="">
+      <div class="detailsAbout fade-in col-md-7">
+        <p class="about">
+          CCSI-Women-Canada works to promote women’s equality and empowerment in peace and security
+           and sustainable economic growth. Our network of experienced and talented women experts in
+            specialized areas of competence prepare and deliver training programs, implement capacity 
+            building projects, and provide leadership and mentorship to women currently working in those
+             fields or who wish to do so. Among its goals, CCSI-W Canada aims to ensure that the application 
+             of sanctions and strategic trade control are respectful and fully compliant with human rights and 
+             international humanitarian law.
+        </p>
+          <p class="additional-content" style="display: none;">
+            Our network of CCSI experts, including in CCSI Africa and CCSI Asia and Pacific, have conducted 
+            training programs for public and privates sector professionals of well over 50 countries assisting
+             governments and the private sector in building their capacity in these areas: Strategic Trade Control 
+             and Sanctions policy-making, implementation enhancements, and compliance monitoring Private sector compliance 
+             policies and practices for Srategic Trade Control and Sanctions Sanctions implications for human and gender rights
+              Monitoring and enforcement of human and gender rights and protection of humanitarian aid Preventive and protective 
+              strategies against cyber security failures, and abuses of cryptocurrencies International terrorism and counter-extremism
+               strategies that respect gender and human rights Gender-balanced mediation and conflict reduction strategies CCSCI’s 
+               network of experts have delivered projects in partnership with numerous governmental agencies including Global Affairs 
+               Canada, the U.S. Department of State (EXBS/CTR/NDF), The Ministry of Foreign Affairs of Japan, the European Union 
+               External Action Service, the African Development Bank,
+             the Gesellschaft für Internationale Zusammenarbeit (GIZ), and companies and institutional investors.
+         </p>
+        <button  class="read-more-link btn">Read More</button>
       </div>
-      </div>
+
     </div>
-    <div class="hidd" style="height:50px;"></div>
-    <div class="title">
-      <h1>About the logo and website</h1>
-      <hr class="hr"> 
-    </div>
-    <div class="hidd" style="height:50px;"></div>
-    <div class="logoAndWebsite fade-in">
-      <p>The CCSI-Women-Canada logo and website are are designed by a team of young Afghan designers trained 
-        by the program, Code to Inspire.</p>
-    </div>
-    <div class="hidd" style="height:50px;"></div>
+ </section>
+ <div class="hidd" style="height:150px;"></div>
+
  <footer>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 f-col">
-                <div>
-                    <img class="footer-logo" src="img/CCSI Women Canada-01.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div> 
-  </footer> 
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 f-col">
+              <div>
+                  <img class="footer-logo" src="img/Finalized of CCSI Women done.png" alt="">
+              </div>
+          </div>
+      </div>
+  </div> 
+</footer>
+
 </body>
 </html>
- <script type="text/javascript" src="js/script.js"></script> 
+<script type="text/javascript" src="js/script.js"></script>
