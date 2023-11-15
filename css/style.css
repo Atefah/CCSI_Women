@@ -74,7 +74,7 @@ h1,h2,h3,h4,h5{
 /* footer style*/
 footer{
 	/* background-image: linear-gradient(to right, white 50%, rgba(234,196,175,255)); */
-	background: radial-gradient(circle, rgb(243, 246, 249) 0%, rgba(253,187,45,1) 99%);	
+	background: radial-gradient(circle, rgb(243, 246, 249) 0%, rgb(237, 165, 9) 99%);	
 }
 
 .footer-logo{
