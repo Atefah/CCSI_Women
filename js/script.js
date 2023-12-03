@@ -86,15 +86,45 @@
   var content1 = document.getElementById("ModalContent1");
   var content2 = document.getElementById("ModalContent2");
   var content3 = document.getElementById("ModalContent3");
+  var content4 = document.getElementById("ModalContent4");
+
+  var content5 = document.getElementById("ModalContent5");
+  var content6 = document.getElementById("ModalContent6");
+  var content7 = document.getElementById("ModalContent7");
+  var content8 = document.getElementById("ModalContent8");
+
+  var content9 = document.getElementById("ModalContent9");
+  var content10 = document.getElementById("ModalContent10");
+  var content11 = document.getElementById("ModalContent11");
+
   var btn1 = document.getElementById("modal1");
   var btn2 = document.getElementById("modal2");
   var btn3 = document.getElementById("modal3");
+  var btn4 = document.getElementById("modal4");
+
+  var btn5 = document.getElementById("modal5");
+  var btn6 = document.getElementById("modal6");
+  var btn7 = document.getElementById("modal7");
+  var btn8 = document.getElementById("modal8");
+
+  var btn9 = document.getElementById("modal9");
+  var btn10 = document.getElementById("modal10");
+  var btn11 = document.getElementById("modal11");
   
   function openModal1() {
    
     content1.style.transform = "translateX(0)"; 
     content2.style.transform = "translateX(100%)"; 
     content3.style.transform = "translateX(100%)"; 
+    content4.style.transform = "translateX(100%)"; 
+    content5.style.transform = "translateX(100%)"; 
+    content6.style.transform = "translateX(100%)"; 
+    content7.style.transform = "translateX(100%)"; 
+    content8.style.transform = "translateX(100%)"; 
+    content9.style.transform = "translateX(100%)"; 
+    content10.style.transform = "translateX(100%)"; 
+    content11.style.transform = "translateX(100%)"; 
+
     btn1.style.borderColor="orange";
     // btn2.style.borderColor="#000";
     // btn3.style.borderColor="#000";
@@ -106,21 +136,204 @@
     content1.style.transform = "translateX(100%)"; 
     content2.style.transform = "translateX(0)"; 
     content3.style.transform = "translateX(100%)"; 
+    content4.style.transform = "translateX(100%)"; 
+    content5.style.transform = "translateX(100%)"; 
+    content6.style.transform = "translateX(100%)"; 
+    content7.style.transform = "translateX(100%)"; 
+    content8.style.transform = "translateX(100%)"; 
+    content9.style.transform = "translateX(100%)"; 
+    content10.style.transform = "translateX(100%)"; 
+    content11.style.transform = "translateX(100%)";
+
     btn2.style.borderColor="orange";
     btn1.style.borderColor="white";
     btn3.style.borderColor="white";
   }
 
   function openModal3() {
-
     content1.style.transform = "translateX(100%)"; 
     content2.style.transform = "translateX(100%)"; 
     content3.style.transform = "translateX(0)"; 
+    content4.style.transform = "translateX(100%)"; 
+    content5.style.transform = "translateX(100%)"; 
+    content6.style.transform = "translateX(100%)"; 
+    content7.style.transform = "translateX(100%)"; 
+    content8.style.transform = "translateX(100%)"; 
+    content9.style.transform = "translateX(100%)"; 
+    content10.style.transform = "translateX(100%)"; 
+    content11.style.transform = "translateX(100%)";
+    
     btn3.style.borderColor="orange";
     btn1.style.borderColor= "white";
     btn2.style.borderColor="white";
    
   }
+  function openModal4() {
+    content1.style.transform = "translateX(100%)"; 
+    content2.style.transform = "translateX(100%)"; 
+    content3.style.transform = "translateX(100%))"; 
+    content4.style.transform = "translateX(0)"; 
+    content5.style.transform = "translateX(100%)"; 
+    content6.style.transform = "translateX(100%)"; 
+    content7.style.transform = "translateX(100%)"; 
+    content8.style.transform = "translateX(100%)"; 
+    content9.style.transform = "translateX(100%)"; 
+    content10.style.transform = "translateX(100%)"; 
+    content11.style.transform = "translateX(100%)";
+
+    btn3.style.borderColor="orange";
+    btn1.style.borderColor= "white";
+    btn2.style.borderColor="white";
+   
+  }
+
+  function openModal5() {
+
+    content1.style.transform = "translateX(100%)"; 
+    content2.style.transform = "translateX(100%)"; 
+    content3.style.transform = "translateX(100%))"; 
+    content4.style.transform = "translateX(100%)"; 
+    content5.style.transform = "translateX(0)"; 
+    content6.style.transform = "translateX(100%)"; 
+    content7.style.transform = "translateX(100%)"; 
+    content8.style.transform = "translateX(100%)"; 
+    content9.style.transform = "translateX(100%)"; 
+    content10.style.transform = "translateX(100%)"; 
+    content11.style.transform = "translateX(100%)";
+
+    btn3.style.borderColor="orange";
+    btn1.style.borderColor= "white";
+    btn2.style.borderColor="white";
+   
+  }
+
+  function openModal6() {
+
+    content1.style.transform = "translateX(100%)"; 
+    content2.style.transform = "translateX(100%)"; 
+    content3.style.transform = "translateX(100%))"; 
+    content4.style.transform = "translateX(100%)"; 
+    content5.style.transform = "translateX(100%)"; 
+    content6.style.transform = "translateX(0)"; 
+    content7.style.transform = "translateX(100%)"; 
+    content8.style.transform = "translateX(100%)"; 
+    content9.style.transform = "translateX(100%)"; 
+    content10.style.transform = "translateX(100%)"; 
+    content11.style.transform = "translateX(100%)";
+
+    btn3.style.borderColor="orange";
+    btn1.style.borderColor= "white";
+    btn2.style.borderColor="white";
+   
+  }
+
+  function openModal7() {
+
+    content1.style.transform = "translateX(100%)"; 
+    content2.style.transform = "translateX(100%)"; 
+    content3.style.transform = "translateX(100%))"; 
+    content4.style.transform = "translateX(100%)"; 
+    content5.style.transform = "translateX(100%)"; 
+    content6.style.transform = "translateX(100%)"; 
+    content7.style.transform = "translateX(0)"; 
+    content8.style.transform = "translateX(100%)"; 
+    content9.style.transform = "translateX(100%)"; 
+    content10.style.transform = "translateX(100%)"; 
+    content11.style.transform = "translateX(100%)";
+
+    btn3.style.borderColor="orange";
+    btn1.style.borderColor= "white";
+    btn2.style.borderColor="white";
+   
+  }
+
+  function openModal8() {
+
+    content1.style.transform = "translateX(100%)"; 
+    content2.style.transform = "translateX(100%)"; 
+    content3.style.transform = "translateX(100%))"; 
+    content4.style.transform = "translateX(100%)"; 
+    content5.style.transform = "translateX(100%)"; 
+    content6.style.transform = "translateX(100%)"; 
+    content7.style.transform = "translateX(100%)"; 
+    content8.style.transform = "translateX(0)"; 
+    content9.style.transform = "translateX(100%)"; 
+    content10.style.transform = "translateX(100%)"; 
+    content11.style.transform = "translateX(100%)";
+
+    btn3.style.borderColor="orange";
+    btn1.style.borderColor= "white";
+    btn2.style.borderColor="white";
+   
+  }
+
+  function openModal9() {
+
+    content1.style.transform = "translateX(100%)"; 
+    content2.style.transform = "translateX(100%)"; 
+    content3.style.transform = "translateX(100%))"; 
+    content4.style.transform = "translateX(100%)"; 
+    content5.style.transform = "translateX(100%)"; 
+    content6.style.transform = "translateX(100%)"; 
+    content7.style.transform = "translateX(100%)"; 
+    content8.style.transform = "translateX(100%)"; 
+    content9.style.transform = "translateX(0)"; 
+    content10.style.transform = "translateX(100%)"; 
+    content11.style.transform = "translateX(100%)";
+
+    btn3.style.borderColor="orange";
+    btn1.style.borderColor= "white";
+    btn2.style.borderColor="white";
+
+  }
+
+  function openModal10() {
+
+    content1.style.transform = "translateX(100%)"; 
+    content2.style.transform = "translateX(100%)"; 
+    content3.style.transform = "translateX(100%))"; 
+    content4.style.transform = "translateX(100%)"; 
+    content5.style.transform = "translateX(100%)"; 
+    content6.style.transform = "translateX(100%)"; 
+    content7.style.transform = "translateX(100%)"; 
+    content8.style.transform = "translateX(100%)"; 
+    content9.style.transform = "translateX(100%)"; 
+    content10.style.transform = "translateX(0)"; 
+    content11.style.transform = "translateX(100%)";
+
+    btn3.style.borderColor="orange";
+    btn1.style.borderColor= "white";
+    btn2.style.borderColor="white";
+   
+  }
+
+  function openModal11() {
+
+    content1.style.transform = "translateX(100%)"; 
+    content2.style.transform = "translateX(100%)"; 
+    content3.style.transform = "translateX(100%))"; 
+    content4.style.transform = "translateX(100%)"; 
+    content5.style.transform = "translateX(100%)"; 
+    content6.style.transform = "translateX(100%)"; 
+    content7.style.transform = "translateX(100%)"; 
+    content8.style.transform = "translateX(100%)"; 
+    content9.style.transform = "translateX(100%)"; 
+    content10.style.transform = "translateX(100%)"; 
+    content11.style.transform = "translateX(0)";
+
+    btn3.style.borderColor="orange";
+    btn1.style.borderColor= "white";
+    btn2.style.borderColor="white";
+   
+  }
+
+
+
+
+
+
+
+
 
 
   document.addEventListener("DOMContentLoaded", function(){
@@ -131,12 +344,12 @@
           // add padding top to show content behind navbar
           navbar_height = document.querySelector('.navbar').offsetHeight;
           document.body.style.paddingTop = navbar_height + 'px';
-          document.getElementById('navbar_top').style.backgroundColor="#fffff7";
+          document.getElementById('navbar_top').style.backgroundColor="rgb(248, 248, 248)";
           // document.getElementById('link').style.color="black";
           
         } else {
           document.getElementById('navbar_top').classList.remove('fixed-top');
-          document.getElementById('navbar_top').style.backgroundColor="transparent";
+          document.getElementById('navbar_top').style.backgroundColor="#fffff7";
           // document.getElementById('link').style.color="white";
          
            // remove padding top from body
