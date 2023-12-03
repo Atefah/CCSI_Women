@@ -3,15 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCSI women Canada</title>
+    <title>CCSI women</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/logo done.png">
     <link rel="Stylesheet" type="text/css" href="css/fontawesome-free-6.4.2/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/jquery.js"></script>  
     <script src="js/bootstrap.min.js"></script>
     <style>
+
+
+
+
+
+
+a{
+        color: #e03a3c;
+      }
+      a:hover{
+        color: #e03a3c;
+        text-decoration: none;
+      }
+      .team .member{
+        margin-bottom: 20px;
+        overflow: hidden;
+        border-radius: 5px;
+        background-color: rgb(248, 248, 248);
+      }
+      .team .member .member-img{
+        position: relative;
+        overflow: hidden;
+      }
+      .team .member .social{
+        position: absolute;
+        left: 0;
+        bottom: 30px;
+        right: 0;
+        opacity: 0;
+        transition: ease-in-out 0.3S;
+        text-align: center;
+      }
+      .team .member:hover .social{
+          opacity: 1;
+          bottom: 15px;
+      }
+     .team .member .social a{
+      
+        color: #11111111;
+        margin: 0 2px;
+        padding-top: 7px;
+        border-radius: 50px;
+        width: 36px;
+        height: 36px;
+        background: #e03a3c;
+        display: inline-block;
+        text-decoration: none;
+        transition: ease-in-out 0.3s;
+        color: #fff;
+
+      } 
+    
+
+     .team .member .social a:hover{
+        background-color:#11111111 ;
+      }
+      .team .member .social i{
+        font-size: 18px;
+      } 
+      .team .member .member-info{
+        padding: 25px 15px;
+      }
+
+      .team .member .member-info h1{
+        font-weight: 700;
+        margin-bottom: 5px;
+        font-size: 20px;
+        color: black;
+      }
+       .team .member .member-info span{
+        display: block;
+        font-size: 18px;
+        font-weight: 500px;
+     color:#025196;
+      }
+    
+     section{
+        padding: 60px 0;
+        overflow: hidden;
+        position: relative;
+      }
+     .section-title {
+        text-align: center;
+        padding-bottom: 30px;
+        position: relative;
+      } 
+
+     .section-title h2{
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+      }
+      .section-title h2::after{
+          content: '';
+          position: absolute;
+          display: block;
+          width: 50px;
+          height: 3px;
+          background: #e03a3c;
+          bottom: 0;
+          left: calc(50% - 25px);
+      }
+      .section-title p{
+        margin-bottom: 0;
+      } 
+      .section-bg{
+        padding: 120px 0;
+        color: #fff;
+      }
+      /* .section-bg::before{
+        content: "";
+        background: #1b1b1b;
+        position: absolute;
+        bottom: 60px;
+        top: 60px;
+        left: 0;
+        right: 0;
+        transform: skewY(-3deg);
+      } */
+     
+
+      /* second ddeetails */
+
+      /* *{ */
+      /* margin:0;
+      padding:0; */
+      /* overflow:inherit; */
+      /* box-sizing:border-box;
+      font-family: 'Poppin'; */
+ /* } */
      .btn{
       display: inline-block;
       text-decoration: none;
@@ -30,373 +164,665 @@
     .btn:hover{
       border-top-right-radius: 30px;
     }
-      .containerTeam{
-        width: 100%;
-        margin:0 auto;
 
-       
-      }
-      .row{
-        position: relative;
-        margin-left: 20%;
-        
-      }
-       .row .column{
-        /* margin: 0 auto; */
-        border-radius: 10px;
-        border: 2px solid white;
-        position: relative;
-        width: calc(25% - 20px);
-        min-height: 250px;
-        box-sizing: border-box;
-        overflow: hidden;
-        cursor: pointer;
-        
-      }
-   
-      .row .column:before{
-        content: '';
-        position: absolute;
-        bottom: -100%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 0, 0, 1);
-        z-index: 1;
-        transition: .5s;
-        mix-blend-mode: soft-light;
-      } 
-     .row .column:hover:before{
-        bottom: 0;
-      } 
-      .row .column .imgBox{
-        position: relative;
-
-      }
-      
-      .row .column .imgBox img{
+    .center-vertical{
+      display: flex;
       width: 100%;
-      transition: 5s;
-      }
-     
-      .row .column:hover .imgBox img{
-       transform: scale(1.5);
-      }
-      .row .column .details{
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        padding: 10px;
-        box-sizing: border-box;
-        background: rgba(0, 0, 0, .9);
-        width: 100%;
-        transition: .5s;
-        z-index: 2;
-       
-      }
-      /* .row .column:hover .details{
-        bottom: 0;
-      } */
-      .row .column .details h3{
-        margin: 0;
-        padding: 0;
-        color: #fff;
-        font-weight: 500;
-        font-size: 15px;
-        text-align: right;
-        text-transform: uppercase;
-      }
-
-      .row .column .details h3 span{
-        margin: 0;
-        padding: 0;
-        color: #f00;
-        font-weight: 900;
-        font-size: 14px;
-        text-align: right;
-        text-transform: uppercase;
-        position: relative;
-        top: -5px;
-      }
-      .row .column .details ul{
-        margin: 0;
-        padding: 0;
-        display: flex;
-        float: right;
-      }
-      .row .column .details ul li{
-        list-style-type: none;
-
-      }
-      .row .column .details ul li a{
-        padding: 0 10px;
-        color: #fff;
-      }
-      .row .column .details ul li a .fa-brands{
-        transition: .5s;
-      }
-      .row .column .details ul li a:hover .fa-brands{
-        transform: rotateY(360deg);
-        color: #f00;
-      }
-
-      @media (max-width: 992px){
-        .containerTeam{
-          width: 90%;
-          margin:20px auto;
-        }
-        .row .column{
-          width: calc(50% - 20px);
-          margin-bottom: 20px;
-         
-        }
-        .ModalContent{
-          display: block;
-          width: 100%;
-        }
-     
-      }
-
-      @media (max-width: 700px){
-      
-        .ModalContent{
-          display: block;
-          width: 100%;
-        }
-        .content-right{
-          display: block;
-          width: 100%;
-        }
-     
-      }
-      @media (max-width: 600px){
-        .containerTeam{
-          width: 95%;
-          margin:20px auto;
-        }
-        .row .column{
-          width: calc(100% - 20px);
-          margin-bottom: 20px;
-         
-        }
-        .ModalContent{
-          display: block;
-          width: 100%;
-        }
-     
-      }
+      min-height: 100hv;
+      align-items: center;
+    }
+    .about-us-section{
+      width: 100%;
+      padding: calc(5% + 30px) 0px;
    
+    }
+    .about-us-section .img-head{
+      position: relative;
+      overflow: hidden;
+    }
+    .about-us-section .img-head::after{
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to right bottom,var(--colorOne) ,var(--colorTwo));
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: .5;
+    }
+    .about-us-section .img-head img{
+      width: 100%;
+      border-radius: 10px;
+      transition: transform .3s;
+    }
+    .about-us-section .img-head:hover img{
+      transform: scale(1.2);
+    }
+    .about-us-section .text-head{
+      font-size: 28px;
+      color:var(--colorTwo);
+    }
+    .about-us-section .job-title{
+      font-size: 20px;
+      color:blue;
+    }
+
+    .about-us-section .break-small{
+      width: 80px;
+      height: 3px;
+      background-color: var(--colorTwo);
+
+    }
+
+    .about-us-section .about{
+      font-size: 16px;
+      color:#444;
+    }
 
 
-.content-right img{
-    width: 250px;
-    height: 250px;
-    border-radius: 5px;
-
-}
-.ModalContent{
-    display: flex;
-    justify-content: center;
-   align-items: center;
-    margin: 5% auto;
-    position: absolute;
-    transform: translateX(100%);
-    transition: 0.3S;
-    
-}
-.content-left{
-    /* flex-basis: 77%; */
-    padding: 20px;
-
-
-}
-.content-left {
-  margin-left: 0;
-}
-.content-left h1{
-  color: black;
-}
-
-.content-right{
-    /* flex-basis: 28%; */
-    text-align: center;
-}
-.ourTeam{
-    width: 80%;
+   #home{
+    background:url('img/education-modern-lifestyle-college-concept-attractive-carefree-redhead-female-student-sitting-wi_1258-144469.jpeg') no-repeat center center fixed;
+    display: table;
+    width: 100%;
+    height:100%;
+    margin: auto;
     position: relative;
-    margin: 0px auto;
-    overflow: hidden;
-} 
-.ourTeam .detailsOurTeam{
+    background-size: cover;
+   }
+   .landing-text{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+   }
 
-    height: 850px;
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 75vh;
+  background: url("./img/background\ women2-01-01.jpeg") top left;
+  background-size: cover;
+  
+  position: relative;
 }
-#ModalContent1{
-  transform: translateX(0px);
+/* 
+#hero:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-/* #modal1{
-  border: 2px solid orange;
+#hero .container {
+  position: relative;
 } */
+
+#hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #222222;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero h1 span {
+  color: #106eea;
+}
+
+#hero h2 {
+  color: #555555;
+  margin: 5px 0 30px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#hero .btn-get-started {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #106eea;
+}
+
+#hero .btn-get-started:hover {
+  background: #247cf0;
+}
+
+#hero .btn-watch-video {
+  font-size: 16px;
+  transition: 0.5s;
+  margin-left: 25px;
+  color: #222222;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+#hero .btn-watch-video i {
+  color: #106eea;
+  font-size: 32px;
+  transition: 0.3s;
+  line-height: 0;
+  margin-right: 8px;
+}
+
+#hero .btn-watch-video:hover {
+  color: #106eea;
+}
+
+#hero .btn-watch-video:hover i {
+  color: #3b8af2;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: 100vh;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #hero .btn-get-started,
+  #hero .btn-watch-video {
+    font-size: 13px;
+  }
+}
+
+@media (max-height: 500px) {
+  #hero {
+    height: 120vh;
+  }
+}
+
+
+
     </style>
 </head>
 <body onscroll="reswize()">     
-    <!-- header  -->
-    <header>    
-      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark b">
+ <div class="navigation-sticky" id="navbar_top">
+    <div class="navbar navbar-light navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="#" >
-            <img  src="img/Finalized of CCSI Women done.png" alt="" id="logo" class="logo">
-          </a>
-          <button class="navbar-toggler bg-warning" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon "></span>
-          </button>
-          <div class="collapse navbar-collapse" id="nav">
-              <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="https://ccsi.global/" id="link">CCSI Family
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="index.html" id="link">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="LeaderShipAndExpirts.html" id="link">Leadership & Experts</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="contact.html" id="link">Contact</a>
-                </li>
-              </ul>
+            <a href="#" class="navbar-brand"><img src="img/CCSI Women_edit.png" alt="logo"  class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="https://ccsi.global/" class="nav-link ">CCSI family</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Our mission</a></li>
+                    <li class="nav-item"><a href="LeaderShipAndExpirts.html" class="nav-link active">Our team</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link ">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="responsive">
+    <div class="text">
+      <h1>Our Team</h1>
+    </div>
+    <img src="img/background women2-01-01.jpeg" alt="" class="img-fluid">
+  </div>
+  
+  <!-- End Hero -->
+  
+<div class="hidd" style="height:10px;"></div>
+
+<!----MAIN SECTIOIN-->
+<section id="team" class="team section-bg">
+  <div class="container" data-aos="fade-up">
+      <div class="section-title"> <!-- <h2>Team</h2> --></div>
+
+      <!---seecond row-->
+      <div class="row">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch column">
+              <div class="member" data-aos="fade-up" data-aos-delay="100" >
+                  <div class="member-img">
+                    <img src="img/Loraine Rickard-Martin2.jpeg" alt="" class="img-fluid">
+                    <!--social-->
+                    <div class="social">
+                      <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                      <a href=""><i class="fa-brands fa-facebook"></i></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                  </div>
+                    <!--member info-->
+                  <div class="member-info">
+                    <h1>Loraine Rickard-Martin</h1>
+                    <span>Executive Director</span>
+                    <p class="about">
+                      Loraine Rickard-Martin is Executive Director of CCSI Women, and co-founder and  Chair of the Board of Directors of Compliance and Capacity Skills International (CCSI). 
+                  </p>
+                      <p class="additional-content" style="display: none;">
+                        As Board Chair, she provides strategic support and oversight of CCSI’s training programs on compliance with sanctions, strategic trade control and other public and private sector security issues.
+                        As CCSI Women’s Executive Director, she works to support women international security professionals, to increase their competence through training, and their impact on international peace and security and related economic growth.
+                        As CCSI’s CEO, she co-managed the first United Nations system-wide training on sanctions compliance and implementation (2011-2012) funded by the Government of Canada;  co-managed sanctions reform processes such as the High-Level Review of United Nations Sanctions  (2915), the follow-on Assessment of the HLR (2017); and co-implemented of the Best Practices Guide for Chairs and Members of UN Sanctions Committees (2018 and 2020), that includes guidance and policy on Gender Equality and UN Sanctions, specifically the risks of limiting UN sanctions to Conflict Related Sexual Violence (CRSV), gender competence in the UN sanctions system; and improving UN sanctions to prevent gender-related threats and violence more effectively. 
+                        She implemented the “Workshop on Sanctions and Gender” held in Nairobi in 2019, funded by Global Affairs Canada(GAC) and the Government of the Netherlands. She advised the African Union’s Peace and Security Council on sanctions issues with the drafting of an AU sanctions manual (2012).
+                        Prior to co-founding CCSI in 2011, she served the United Nations for over three decades, including 15 years as senior political affairs officer and sanctions committee secretary in the Security Council Affairs Division of the Department of Political Affairs, New York, advising sanctions committee chairs and members, supporting teams of sanctions monitors, and participating in reform processes to refine the sanctions tool. 
+                        She was Secretary of the UN Secretary-General’s High-Level Panel on Threats, Challenges and Change (2003-2004). She lectured on United Nations sanctions at Columbia University’s School of International and Public Affairs (SIPA) and taught an intensive ten-week course for diplomats at Columbia University (2010-2013). She is the co-author with Enrico Carisch and Shawna Meister of “The Evolution of UN Sanctions: From a Tool of Warfare to a Tool of Peace, Security and Human Rights” (2017), and has co-authored other articles and publications on international sanctions, including, most recently, “United Nations Sanctions – Through a Gender Lens” in “Multilateral Sanctions Dissected: Lessons Learned from Margaret Doxey”, Andrea Charron and Clara Portela, eds., (McGill Queens UP, 2021).   
+                    </p>
+                    <button  class="read-more-link btn">Read More</button>
+                  </div>
+              </div>
+          </div>
+            <!--2ND-->
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch column">
+              <div class="member" data-aos="fade-up" data-aos-delay="200" >
+                <div class="member-img">
+                  <img src="img/Enrico Carisch2.jpeg" alt="" class="img-fluid">
+                  <!--social-->
+                  <div class="social">
+                    <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                </div>
+                    <!--member info-->
+                <div class="member-info">
+                    <h1>Enrico Carisch</h1>
+                    <span>Director ,Specialist on financial aspect of Strategic Trade Control and Sanctions Compliance and Implementation</span>
+                    <p class="about">
+                      Enrico Carisch serves as  Director of CCSI Women. He is co-founder and Chief Executive Officer of CCSI. 
+                    </p>
+                      <p class="additional-content" style="display: none;">
+                        In addition to coordinating the development and delivery of training curricula, and drafting of manuals and handbooks, he is a specialist in financial integrity frameworks.
+                        Among many other projects delivered on behalf of GAC, he has conceived and delivered trainings on counter-proliferation financing, on the effective application of client-onboarding, KYC and due diligence. 
+                        Prior to co-founding CCSI in 2011, he served the United Nations Security Council as a financial and natural resources sanctions monitor. He leads and conducts research and capacity-building projects for conflict-affected regions and societies, and frequently authors and co-authors articles and manuals on the wide range of security topics covered in CCSI’s training programs.  He co-managed the first UN system-wide training program on sanctions, funded by Global Affairs Canada (2012-2013), and the consultative process for the High Level Review of UN Sanctions Practices (2014) as well as the development of the Best Practices Guide for Chairs and Members of United Nations Sanctions Committees (2020) that includes guidance and policy on Gender Equality and UN Sanctions, specifically the risks of limiting UN sanctions to Conflict Related Sexual Violence (CRSV), gender competence in the UN sanctions system; and improving UN sanctions to prevent gender-related threats and violence more effectively. He has authored articles on the gender implications of sanctions, as follows:
+                        Sanctions: Gender, violence and the Security Council. Time for a rethink? (World ECR)
+                        https://www.worldecr.com/archive/sanctions-gender-violence-and-the-security-council-time-for-a-rethink/
+                    </p>
+                    <button  class="read-more-link btn">Read More</button>
+                </div>
+              </div>
+        </div>
+        <!--first column-->
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch column" onclick="openModal1()" id="modal1">
+          <div class="member" data-aos="fade-up" data-aos-delay="100" >
+            <!--image-->
+            <div class="member-img">
+              <img src="img/Caterina Ventura3 .jpeg" alt="" class="img-fluid">
+              <!--social-->
+              <div class="social">
+                <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></i></a>
+                 <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+              <!--member info-->
+            <div class="member-info">
+              <h1>Caterina Ventura</h1>
+              <span>Director</span>
+              <p class="about">
+                Caterina Ventura is a Director of CCSI Women and Chief Executive Officer of CCSI Canada.
+               </p>
+                <p class="additional-content" style="display: none;">
+                  She is an international lawyer with extensive experience in a range of political, economic and human rights issues, at The Hague, in the United Nations, Human Rights and Economic Law Division, at the Canadian Human Rights Commission, and in the Ontario Human Rights Commission. 
+                   She served in Global Affairs  Canada in a variety of positions from 1999  to 2021,  recently as  High Commissioner to Brunei, where she was responsible for country policy and programming coherence on trade, political, public affairs, and consular and administration. 
+
+                  As Senior Adviser, Partnerships for Development Innovation Branch, she was engaged in the development of the Department’s Innovation for Development policy and led its implementation through connecting social impact entrepreneurs with investors in order to provide needed goods and services to countries in development. 
+                  
+                  While representing the Government of Canada at the United Nations,  she formulated political strategies and advanced and promoted Canadian policies, priorities and interests on the Middle-East, Asia, counter-terrorism, and sanctions. 
+                  
+                  She facilitated collaboration among the UN Secretariat, member states and stakeholders to advance common objectives, participated in and chaired negotiations and provided the Government with timely, quality reporting analysis on high profile, often controversial Security Council and General Assembly issues including Afghanistan, Libya, Syria, Iraq and Israel/Palestine. She was  instrumental in facilitating the Canadian Government’s sponsorship of the first UN system-wide training on sanctions monitoring and implementation, implemented by Compliance and Capacity Skills International (CCSI) in 2012-2013.
+                </p>
+              <button  class="read-more-link btn">Read More</button>
+            </div>
+          </div>
+        </div>
+
+        <!---second column-->
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch column" onclick="openModal2()" id="modal2">
+              <div class="member" data-aos="fade-up" data-aos-delay="200" >
+                 <!--image-->
+                    <div class="member-img">
+                      <img src="img/Alba Delgado.jpeg" alt="" class="img-fluid">
+                      <!--social-->
+                      <div class="social">
+                        <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></i></a>
+                          <a href=""><i class="fa-brands fa-instagram"></i></a>
+                      </div>
+                    </div>
+                      <!--member info-->
+                    <div class="member-info">
+                        <h1>Alba Delgado</h1>
+                        <span>Financial Coordinator</span>
+                        <p class="about">
+                          Alba P. Delgado, from Honduras, has a Master’s Degree in Corporate Finance from the University of Valencia, Spain. 
+
+                        </p>
+                          <p class="additional-content" style="display: none;">
+                            Currently working with CCSI’s bookkeeping, budgeting, accounts payable and financial reports, Alba is interested not only in the business side of the company, but plans to also join CCSI’s thematic work on UN and international sanctions and other security issues. She is particularly interested and engaged in fighting gender violence and protecting human rights. 
+                          </p>
+                        <button  class="read-more-link btn">Read More</button>
+                    </div>
+              </div>
+          </div>
+          
+      </div>
+
+      <!--third row-->
+      <div class="row">
+            <!--third columnn-->
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch column" onclick="openModal3()" id="modal3">
+              <div class="member" data-aos="fade-up" data-aos-delay="300" >
+                <!--image-->
+                   <div class="member-img">
+                     <img src="img/Dr. Seema Gahlaut.jpg" alt="" class="img-fluid">
+                     <!--social-->
+                     <div class="social">
+                       <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                       <a href=""><i class="fa-brands fa-facebook"></i></i></a>
+                         <a href=""><i class="fa-brands fa-instagram"></i></a>
+                     </div>
+                   </div>
+                     <!--member info-->
+                   <div class="member-info">
+                     <h1>Dr. Seema Gahlaut</h1>
+                     <span>Strategic Trade Control Specialist</span>
+                     <p class="about">
+                      Dr. Seema Gahlaut has over 20 years of experience in research and analyses on a range of issue related to technology security (dual-use and military export controls, sanctions, supply chain security, international treaties, UNSC Resolutions, multilateral agreements, and compliance).  
+                    </p>
+                      <p class="additional-content" style="display: none;">
+                        She has leveraged this expertise while conducting  training and outreach to government officials and corporate leaders  in 70+ countries.
+                        She is a Member of Export Controls Expert Group (2008 – present) at the Council for Security and Cooperation in the Asia Pacific (CSCAP), and of the Working Group on CBRN in Women of Color Advancing Peace and Security (WCAPS). She was also a Co-Chair (2021-22) of Proliferation Finance Workstream, Association of Certified Anti Money-laundering Specialists (ACAMS).
+                          Seema’s prior experience includes Lawrence Livermore National Laboratory [Lab Lead for International Nonproliferation Export Control Program (INECP)]; the Henry L. Stimson Center [Director, Strategic Trade Management Initiative (STMI), and Senior Fellow, Trade, Technology and Security Program (TTS)]; and  Center for International Trade and Security (CITS) at the University of Georgia [Assistant Director, Training and Outreach].
+  
+                          Seema has conducted training and outreach for governments and industry around the world, under numerous projects funded by the Departments of State (EXBS, CTR) and Energy (INECP and national labs), United States Institute of Peace, and private foundations (Carnegie Corporation, Ford Foundation, Smith Richardson, Rockefeller Fund, and Japan Center for Global Partnership). 
+  
+                          Her training and organizational experience has included over 25 sessions of the Security and Strategic Trade Management Academy (SSTMA) between 2007 and 2021, funded by EXBS and designed for foreign government officials who are tasked with establishing national strategic trade management systems and complying with UNSCR 1540. In April 2021, she organized the first ever virtual SSTMA. More than 2000 officials from 70+ countries, including numerous EXBS advisors, have gone through the SSTMA trainings, and provided near-unanimous positive evaluations about the quality of content. Seema has also designed and conducted customized training to government officials and industry from China, the Dominican Republic, India, Indonesia, Jamaica, Kenya, Malaysia, Mexico, Morocco, Pakistan, Panama, Philippines, Saudi Arabia, Thailand, Trinidad and Tobago, UAE and Vietnam on STC, CBRN security and international sanctions.
+  
+                          In addition, Seema helped draft a 1540-relevant STC law for CARICOM countries, to utilize as a base for their individual legal adaptations. She has recently concluded a survey of 1540 Points of Contact and a series of interactions with Indian bio-scientists and industry, exploring post-COVID bio-security challenges and opportunities. She has participated in numerous discussions on the importance of government-industry and government-academia partnerships in regulating dual-use materials and technologies, especially with reference to intangible technology transfers.
+  
+                          Her current research focus is on the feasibility of multilateral standards on implementing sanctions and related issues of technology transfers and supply chain security. She is exploring how e-tools and blockchain technology can be harnessed to strengthen national and regional responses to STC and sanctions compliance in this regard.
+                      </p>
+                    <button  class="read-more-link btn">Read More</button>
+                   </div>
+              </div>
+            </div>
+            <!----fourth column-->
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch column" onclick="openModal4()" id="modal4">
+              <div class="member" data-aos="fade-up" data-aos-delay="400" >
+                <!--image-->
+                   <div class="member-img">
+                     <img src="img/Shawna Meister2.jpeg" alt="" class="img-fluid">
+                     <!--social-->
+                     <div class="social">
+                       <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                       <a href=""><i class="fa-brands fa-facebook"></i></i></a>
+                         <a href=""><i class="fa-brands fa-instagram"></i></a>
+                     </div>
+                   </div>
+                     <!--member info-->
+                   <div class="member-info">
+                     <h1>Shawna Meister</h1>
+                     <span>Advisor on Sanctions Compliance 
+                      Advisor on Gender, Diversity, and Inclusion</span>
+                      <p class="about">
+                        Shawna has over 20 years expertise in managing projects, conducting evidence-based research, designing training, and delivering meaningful impact to people and communities. 
+  
+                      </p>
+                        <p class="additional-content" style="display: none;">
+                          She has a background in international peace and security with specializations in the United Nations (UN), UN sanctions, and Africa and the Middle East regions. 
+                          Additionally, she is trained in various sex, gender, equity, diversity, and inclusion areas, and ensures research, projects, and implementation activities reflect these important lenses. Providing expert training and implementation also have been a core component of Shawna’s career. 
+  
+                          She has been a contributor to CCSI’s work since its establishment, including analyzing the impact and effectiveness of UN sanctions, examining non-proliferation sanctions, contributing to country training teams, and as a co-author of CCSI’s 2017 publication, The Evolution of UN Sanctions. She envisions a more secure world rooted in respect for human rights for all, equity, and sustainable security.
+                        </p>
+                      <button  class="read-more-link btn">Read More</button>
+                   </div>
+             </div>
+            </div>
+        <!--first column-->
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch column" onclick="openModal5()" id="moda5">
+          <div class="member" data-aos="fade-up" data-aos-delay="100" >
+            <!--image-->
+            <div class="member-img">
+              <img src="img/Musilhana Mustafa2.jpeg" alt="" class="img-fluid">
+              <!--social-->
+              <div class="social">
+                <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></i></a>
+                 <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+              <!--member info-->
+            <div class="member-info">
+              <h1>Musilhana Mustafa</h1>
+              <span>Expert in Ballistics and Missile Technology</span>
+              <p class="about">
+                Musilhana Mustafa has 30 years of experience export control, expert in ballistics and missile technology (Weapons of Mass Destruction).
+               </p>
+                <p class="additional-content" style="display: none;">
+                  She initiated ballistic testing on bullet resistant jackets and helmets for armed forces of Malaysia, included verification of high technology strategic items, giving consultations on strategic trade matters, synchronizing updates of the EU strategic list and the local list, and liasing with technical agencies.
+                  She started working as Research Officer with the Science and Technology Institute, Ministry of Defence in 1994.  As subject matter expert in ballistics and missile technology, she headed the pioneer technical team for missile testing in 2004 in Tanjung Siang which later became the must-haves team in missile training exercises. In 1999 she initiated ballistic testing on bullet-resistant jackets and helmets for the armed forces of Malaysia. Ballistic testing is now compulsory for any new Mindef procurement of ballistic material
+                  She has been STS MITI Technical Assessor in Strategic Trade Secretariat , Ministry of International Trade and Industry since November 2011, where she assisted STS in many Strategic Trade Act 2010 (STA 2010) trade issues, verification of high technology strategic items, giving consultations on strategic trade matters, synchronizing updates of the EU strategic list and the local list, and liasing with the technical agencies on STA 2010 issues. She is a subject matter expert in export control trade strategic trade items.
+                  She assisted in developing the SOP for Commodity Classification Assessment for STA Category Code determination and updating ton the national list since 2011, played a part in developing the SOP for enforcement at STS, conducted several raiding and investigations for STA cases together with other technical agencies in enforcement and ensuring that the items are controlled, and represented Malaysia at various international conferences and meetings especially on technical aspect of STA implementation.
+                  She was appointed as Alternative Board Member of Angkasa Malaysia (Space Agency of Malaysia) representing MITI,  and awarded The WIST Honors Pioneer Award (Government Sector) at the Malaysia Strategic Trade Summit 2023 co-organised by MITI and EXBS US.
+                </p>
+              <button  class="read-more-link btn">Read More</button>
+            </div>
+          </div>
+        </div>
+
+        <!---second column-->
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch column" onclick="openModal6()" id="modal6">
+              <div class="member" data-aos="fade-up" data-aos-delay="200" >
+                 <!--image-->
+                    <div class="member-img">
+                      <img src="img/Elizabeth Okoth2.jpeg" alt="" class="img-fluid">
+                      <!--social-->
+                      <div class="social">
+                        <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></i></a>
+                          <a href=""><i class="fa-brands fa-instagram"></i></a>
+                      </div>
+                    </div>
+                      <!--member info-->
+                    <div class="member-info">
+                      <h1>Elizabeth Okoth</h1>
+                      <span>Specialist, Gender-based Violence, Youth and Women’s Empowerment</span>
+                      <p class="about">
+                        Elizabeth (Liz) Okoth is a Public Health Specialist and a Senior Consultant.
+                       </p>
+                        <p class="additional-content" style="display: none;">
+                          Liz has expertise, with over 20 years’ experience, in designing, implementing, managing, training, mentorship, and consulting in areas of sexual and gender-based violence, human rights, HIV programing and rights, sexual reproductive health and rights, youth and women empowerment, social-behavioral research, institutional systems strengthening, and grant management. 
+                          Liz has presented papers focused on the above thematic areas in international forums to influence policy and practice including in forums held in Paris, Seattle, Nairobi, Amsterdam, Johannesburg, Cape Town, Dar-es-salaam and Lilongwe. Liz is talented in  stakeholder engagement and has led national program adaptation initiatives working with the Ministries of Health and Education, UNICEF, US Government agencies, communities and local partners.
+                            Liz holds a Master of Public Health Degree from the University of Ghana, and Bachelor of Science Degree from Egerton University-Kenya. She’s a Project Management Trainer, with a Training of Trainers certificate in Project-DPro (a globally recognized project management certification for development professionals).
+                            Liz has consulted for the World Health Organization (WHO) in a Technical Assistance mechanism for adolescent and youth sexual reproductive health and rights in Kenya. She has also consulted for American Jewish World Service and Citizen’s Advancement Initiative, as a principal investigator in a study for “Adolescents Girls with Disability (AGWD) Sexual Reproductive Health and Rights (SRHR)” in Kenya. She also consulted for Plan International and the Ministry of Health in the Development of a comprehensive school health program. Liz currently consults for Grassroot Soccer-Adolescent Health Organization spearheading their programs and partnerships in the East Africa Region, and formerly in Malawi. She formerly worked for Elizabeth Glaser Pediatric AIDS Foundation where she served as a Senior Technical Advisor Pediatric and Adolescent Services in Kenya, and equally supported the programs in Malawi, Lesotho and Uganda. She also served in AMREF Health Africa as a Program Manager for Orphans and Vulnerable Children and Community Care services; and in the Young Women’s Christian Association (YWCA) as Head of Programs, and as the YWCA Global Youth Champion in the Ecumenical HIV and AIDS Initiative in Africa. Liz loves community service and travelling in her free time.
+                        </p>
+                      <button  class="read-more-link btn">Read More</button>
+                    </div>
+              </div>
+          </div>
+          
+      </div>
+
+
+      <!--foourth row-->
+      <div class="row">
+            <!--third columnn-->
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch column" onclick="openModal7()" id="modal7">
+              <div class="member" data-aos="fade-up" data-aos-delay="300" >
+                <!--image-->
+                   <div class="member-img">
+                     <img src="img/Pilar Reina2.jpeg" alt="" class="img-fluid">
+                     <!--social-->
+                     <div class="social">
+                       <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                       <a href=""><i class="fa-brands fa-facebook"></i></i></a>
+                         <a href=""><i class="fa-brands fa-instagram"></i></a>
+                     </div>
+                   </div>
+                     <!--member info-->
+                   <div class="member-info">
+                     <h1>Pilar Reina</h1>
+                     <span>Expert on International Weapons and Ammunition Research</span>
+                     <p class="about">
+                      Pilar is an International Weapons and Ammunition Research Expert with over twelve years of experience in this field.
+                    </p>
+                      <p class="additional-content" style="display: none;">
+                        She has research, policy and field experience across several regions including West Africa, Latin America, the Middle East, the Caucasus and different parts of Asia, including China. Pilar has worked with governments, practitioners and numerous United Nations agencies and international organisations to address security risks posed by weapons and ammunition stockpiles.
+  
+                        Pilar recently led implementation of the African-China-Europe Project on Arms in Africa, successfully advocating for the return of conventional small arms and ammunition control to the agenda of FOCAC (Forum of China and Africa Cooperation) and its inclusion in the China-Africa Cooperation Vision 2035 agenda.
+                        
+                        Pilar previously served at the Bonn International Center for Conversion (BICC) as Technical Advisor on small arms and light weapons for West Africa and the Sahel, and worked together with national governments and sub-regional organisations to garner political commitment and coordinated efforts to work on implementing Physical Security and Stockpiles Management best practices on the ground.
+                        
+                        Prior to that, Pilar worked for the Small Arms Survey where she developed and helped guide a research project on Unplanned Explosions and Munitions Sites. She co-authored the “UEMS: Stockpiles as Liabilities Rather Than Assets” handbook and the UEMS database created through the project continues to serve as an important resource for governments and international organisations. The UEMS indicator helped galvanise international efforts to implement the International Ammunition Technical Guidelines (IATG) as well as efforts by the United Nations Office for Disarmament (UNOD) in creating a group of experts to create a comprehensive framework to prevent accidents at munition sites and munition diversions to unauthorized recipients.
+                        
+                        Pilar has also worked as an independent consultant with governments and international organisations promoting conventional weapons and ammunition control management. As such, she has provided expert advice in the framework of relevant multilateral, bilateral and regional programs of the United Nations, as an Expert Member of the UN SaferGuard Strategic Coordination Group meeting which reviews the International Ammunition Technical Guidelines annually; and for the European Union, as a contributing member of the Arms Trade Treaty outreach project phase I and II.
+                        
+                        A native of Colombia, Pilar's upbringing was marked by witnessing the intensity of Colombia's armed conflict of the 1990's. In 1998, aged 17, she was successful in joining the Colombian Air Force as one of the first batch of women cadet officers and future pilot trainees. She went on to study Government and International Relations at the University of Externado, that she completed at Sciences Po, Bordeaux, France. Pilar has a Masters in Public Management (2010) and in Political Science (2013) from the University of Geneva, both with a focus on international security issues. 
+                        
+                        Pilar is a native Spanish speaker and is fluent in French and English. She also has knowledge of German and Italian.
+  
+                      </p>
+                    <button  class="read-more-link btn">Read More</button>
+                   </div>
+              </div>
+            </div>
+            <!----fourth column-->
+              <div class="col-lg-3 col-md-6 d-flex align-items-stretch column" onclick="openModal8()" id="modal8">
+                <div class="member" data-aos="fade-up" data-aos-delay="400" >
+                <!--image-->
+                   <div class="member-img">
+                     <img src="img/Durra Sahtout2.jpeg" alt="" class="img-fluid">
+                     <!--social-->
+                     <div class="social">
+                       <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                       <a href=""><i class="fa-brands fa-facebook"></i></i></a>
+                         <a href=""><i class="fa-brands fa-instagram"></i></a>
+                     </div>
+                   </div>
+                     <!--member info-->
+                   <div class="member-info">
+                     <h1>Durra Sahtout</h1>
+                     <span>Expert on Digital Strategy and Compliance </span>
+                     <p class="about">
+                      Durra Sahtout is a digital strategy consultant and IT engineer with critical thinking, and multi-domain expertise.
+                    </p>
+                      <p class="additional-content" style="display: none;">
+                        Durra is passionate about digital transformation, business processes digitization, emerging technologies, and the digital value chain. 
+  
+                        In her work with CCSI, she has participated as a cybersecurity and digital transformation expert in multiple capacity-building projects on compliance and security in different sectors, especially financial and maritime, addressing both private and public actors. 
+  
+                        She provided training and training materials in over 50 countries around the world, on optimizing the transformation process, complying with digital-related international regulations and industrial standards, as well as analyzing risks and opportunities in cyber space. 
+  
+                        Durra has participated with CCSI/CRDF in the following GAC sponsored efforts:  Workshop for Southeast Asia Central Bank and Resilience against DPRK Office 39 in March 2022, Kuala Lumpur; Mongolia/Central Asia Workshop on DPRK sanctions delivered in late July 2022 in Ulanbator; Latin-America/Caribbean Financial Professionals Study Week in Washington, DC in August 2023
+  
+                        She is a native Arabic speaker and is fluent in French and English. She holds a BS in Information Technology Engineering from Damascus University (Damascus, Syria) and Master’s Degrees in Consulting in Organisation, Strategy and Information Systems and in Innovation, Enterprise & Society from the Institut Polytechnique de Paris (Paris, France).
+                                            </p>
+                    <button  class="read-more-link btn">Read More</button>
+                   </div>
+                 </div>
+              </div>
+        <!--first column-->
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch column" onclick="openModal9()" id="modal9">
+          <div class="member" data-aos="fade-up" data-aos-delay="100" >
+            <!--image-->
+            <div class="member-img">
+              <img src="img/Francisca Simiyu2.jpeg" alt="" class="img-fluid">
+              <!--social-->
+              <div class="social">
+                <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></i></a>
+                 <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+              <!--member info-->
+            <div class="member-info">
+              <h1>Francisca Simiyu</h1>
+              <span>CBRN Specialist</span>
+              <p class="about">
+                Francisca Simiyu is based in the Port of Mombasa and leads a team of Kenyan maritime border security detectiion specialists charged with deterring the illegal transportation of CBRN (Chemical, Biological, Radiological and Nuclear) materials.
+              </p>
+                <p class="additional-content" style="display: none;">
+                  She recently joined a team of East African Community partner states as an instructor for Chemical Warfare Agents and Toxic Industrial Agents.
+                  She works with the Kenya Nuclear and Regulatory Authority in performing radiological investigation, identification, and guidance concerning isotopes on flagged consignments and is a seasoned trainer and mentor on CBRN border security checks and compliance based on practical maritime border detection and deterrence.
+                  She also collaborates with other local agencies responsible for border checks for chemical and biological shipments. In doing so, she provides the port community with biological materials sensitization  related to health and safety, communicates with health agencies about events and situations with potentially harmful conditions, observes safety rules and procedures during sample collection of shipments, and in cases of accidents, keeps the scene of the accident under control to minimize potential threats
+                  As part of her role to strengthen the Kenya Megaports Initiative, Ms. Simiyu enjoys close working relationships with the US Department of Energy, its National Nuclear Security Administration (NNSA), and its Office of Nuclear Smuggling Detection and Deterrence (NSDD). The initiative aims to strengthen foreign countries’ capabilities to deter, detect, and interdict the illicit smuggling of nuclear and radioactive materials across international borders. 
+                  She is a graduate of the Technical University of Mombasa (Kenya) and has taken Radiological Detection and Monitoring Training of Trainers (TOT) at the  Nuclear Joint Research Center Karlsruhe (Germany) and has undergone training on bio-safety/ biosecurity by the Public Health Agency (Canada).
+                  Maiko Takeuchi 
+                </p>
+              <button  class="read-more-link btn">Read More</button>
+            </div>
+          </div>
+        </div>
+        <!---second column-->
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch column" onclick="openModal10()" id="modal10">
+              <div class="member" data-aos="fade-up" data-aos-delay="200" >
+                 <!--image-->
+                    <div class="member-img">
+                      <img src="img/Maiko Takeuchi2.jpeg" alt="" class="img-fluid">
+                      <!--social-->
+                      <div class="social">
+                        <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></i></a>
+                          <a href=""><i class="fa-brands fa-instagram"></i></a>
+                      </div>
+                    </div>
+                      <!--member info-->
+                    <div class="member-info">
+                      <h1>Maiko Takeuchi</h1>
+                      <span>Expert/Adviser on Strategic Trade Control and Non-proliferation</span>
+                      <p class="about">
+                        Maiko Takeuchi is an Expert/Adviser on strategic trade control and non-proliferation. She is Chief Executive and Chair of the Board of Directors of CCSI-APAC. 
+                      </p>
+                        <p class="additional-content" style="display: none;">
+                          She has 20 years of experience in national security where she specialized in WMD non-proliferation and security export control. 
+                          She served the United Nations Security Council as a member of the Panel of Experts (UNSCR 1874 Panel of Experts) for North Korea for five years (2016-2021). While on the Panel, she investigated North Korea’s nuclear and other WMD programs and related procurements, and violations of embargos, overseas workers, and activities of UN- designated entities.
+                          Before joining the United Nations, she served the Ministry of Defense for 15 years as a defense policy official. She worked on cyber security strategy and communication systems in the Ministry of Defense, and from 2008 to 2010, she worked on strategic trade control as the chief of the research and planning office at the Ministry of the Economy, Trade and Industry. During her career in government, she was also appointed to the Embassy of Japan in the Republic of Korea as First Secretary and Civilian Defense Attaché for four years. She was appointed to the Cabinet Secretariat for National Security and Crisis Management, where she worked for inter-agency policy coordination.
+                          As a diplomat and strategic trade control officer as well as WMD expert, she has on the ground experience and legal expertise in non-proliferation and strategic trade control. She has had the opportunity to present on outreach and capacity building activities for both government practitioners, industries, and financial institutions.
+                          She is a visiting scholar at the Center for Negotiation and Dispute Resolution Research, Waseda University. She holds a Master’s degree in Regional Studies East Asia from Harvard University, and a Bachelor of Law from the University of Tokyo. While contributing to the media to raise awareness on economic sanctions, she has written a number of articles on the effective implementation of sanctions.
+                        </p>
+                      <button  class="read-more-link btn">Read More</button>
+                    </div>
+              </div>
           </div>
       </div>
-      </nav>
   
-     <!-- <img src="./img/colored without background.png" alt="" class="feature-image anim"> -->
-    </header>
-    <div class="hero">
-      <div class="content">
-        <h6 class="anim">LeaderShip And Expirts</h6>
-      </div> 
-    </div>
-    <div class="hidd" style="height:150px;"></div>
-    <section class="ourTeam">
-        <div class="containerTeam">
-          <div class="row mgt50px">
 
-              <div class="column " onclick="openModal1()" id="modal1">
-                <div class="contentWithImage">
-                  <div class="imgBox">
-                    <img src="img/Caterina Ventura photo.jpeg" alt="">
-                  </div>
-                  <div class="details">
-                    <h3>Caterina Ventura <br> <span>Chief Executive Officer</span></h3>
-                    <ul>
-                     <li><a href=""><i class="fa-brands fa-twitter"></i></i></a></li>
-                     <li><a href=""><i class="fa-brands fa-facebook"></i></i></a></li>
-                     <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="column " onclick="openModal2()" id="modal2">
-                <div class="imgBox">
-                  <img src="img/Loraine Rickard-Martin photo.jpeg" alt="">
-                </div>
-                <div class="details">
-                  <h3>Loraine Rickard <br> <span> Director</span></h3>
-                  <ul>
-                    <li><a href=""><i class="fa-brands fa-twitter"></i></i></a></li>
-                   <li><a href=""><i class="fa-brands fa-facebook"></i></i></a></li>
-                   <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-                </div>
-              </div>
+  </div>
+</section>
 
-              <div class="column" onclick="openModal3()" id="modal3">
-                <div class="imgBox">
-                  <img src="img/Enrico Carisch photo.jpeg" alt="">
-                </div>
-                <div class="details">
-                  <h3>Enrico Carisch <br> <span> Director</span></h3>
-                  <ul>
-                    <li><a href=""><i class="fa-brands fa-twitter"></i></i></a></li>
-                   <li><a href=""><i class="fa-brands fa-facebook"></i></i></a></li>
-                   <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                 </ul>
-                </div>
-              </div>
-             
-            </div>
-        </div>
-        <div class="detailsOurTeam">
-            <div class="ModalContent row" id="ModalContent1">
-                <div class="content-left col-md-8 col-sm-12 col-lg-8">
-                  <h1>Caterina Ventura</h1>
-                  <h3>Chief Executive Officer</h3>
-                  <p class="about">
-                    Caterina Ventura is Chief Executive Officer of CCSI-Women-Canada. She is an international lawyer with extensive experience in a range of political, economic and human rights issues, at The Hague, in the United Nations, Human Rights and Economic Law Division, at the Canadian Human Rights Commission, and in the Ontario Human Rights Commission.
-                  She served in Global Affairs Canada in a variety of positions from 1999 to 2021, recently as High Commissioner to Brunei, where she was responsible for country policy and programming coherence on trade, political, public affairs, and consular and administration. As Senior Adviser, Partnerships for Development Innovation Branch, she was engaged in the development of the Department’s Innovation for Development policy and led its implementation through connecting social impact entrepreneurs with investors in order to provide needed goods and services to countries in development.
-                  </p>
-                    <p class="additional-content" style="display: none;">
-                      While representing the Government of Canada at the United Nations, she formulated political strategies and advanced and promoted Canadian policies, priorities and interests on the Middle-East, Asia, counter-terrorism, and sanctions. She facilitated collaboration among the UN Secretariat, member states and stakeholders to advance common objectives, participated in and chaired negotiations and provided the Government with timely, quality reporting analysis on high profile, often controversial Security Council and General Assembly issues including Afghanistan, Libya, Syria, Iraq and Israel/Palestine. She was instrumental in facilitating the Canadian Government’s sponsorship of the first UN system-wide training on sanctions monitoring and implementation, implemented by Compliance and Capacity Skills International (CCSI) in 2012-2013.
-                   </p>
-                  <button  class="read-more-link btn">Read More</button>
-                </div>
-                <div class="content-right col-md-4 col-sm-12 col-lg-4">
-                    <img src="./img/Caterina Ventura photo.jpeg" alt="">
-                </div>
-            </div>
-    
-            <div class="ModalContent" id="ModalContent2">
-              <div class="content-left col-md-8 col-sm-12 col-lg-8">
-                <h1>Loraine Rickard</h1>
-                <h3>Director</h3>
-                <p class="about">
-                    Loraine Rickard-Martin is a Director of CCSI-Women-Canada. She co-founded Compliance and Capacity Skills International (CCSI) in 2011. She served as its Chief Executive Officer until July 2023 and continues to chair CCSI’s Board from which she oversees CCSI’s program of delivering training projects focused on capacity building assistance
-                    for more effective sanctions enforcement and strategic trade control compliance, for officials in the public and private sectors. CCSI collaborates on projects that are funded by numerous agencies including the US Department of State (EXBS/CTR), the US Department of Energy, Global Affairs Canada, Gesellschaft für Internationale Zusammenarbeit (GIZ) and the African Development Bank.
-                 </p>
-                  <p class="additional-content" style="display: none;">
-                    She is also Adviser to CCSI Asia and Pacific. As CCSI’s CEO, she co-managed the first United Nations system-wide training on sanctions compliance and implementation (2011-2012) funded by the Government of Canada, that included officials of member states and the UN system of the Secretariat, UN programs, agencies, sanctions monitors, and civil society. She also co-managed sanctions reform processes such as the High-Level Review of United Nations Sanctions (2915), the follow-on Assessment of the HLR (2017), and co-implementation of the Best Practices Guide for Chairs and Members of UN Sanctions Committees (2018 and 2020). She implemented the “Workshop on Sanctions and Gender” held in Nairobi in 2019, funded by Global Affairs Canada and the Government of the Netherlands. She advised the African Union’s Peace and Security Council on sanctions issues with the drafting of an AU sanctions manual (2012).
-                 </p>
-                <button  class="read-more-link btn">Read More</button>
-              </div>
-                <div class="content-right col-md-4 col-sm-12 col-lg-4">
-                    <img src="./img/Loraine Rickard-Martin photo.jpeg" alt="">
-                </div>
-            </div>
-            <div class="ModalContent" id="ModalContent3">
-              <div class="content-left col-md-8 col-sm-12 col-lg-8">
-                <h1>Enrico Carisch</h1>
-                <h3>Director</h3>
-                <p class="about">
-                  Enrico Carisch is Director of CCSI-Women-Canada and co-founder and Chief Executive Officer of CCSI where he leads its training programs for public and privates sector professionals that have been conducted in well over 50 countries. CCSI’s training programs assist governments and the private sector in building their capacity
-
-                  in non-proliferation, maritime, port and cyber security and related financial integrity practices in strategic trade control and sanctions. Prior to co-founding CCSI in 2011, he served the United Nations Security Council as a financial and natural resources sanctions monitor.                </p>
-                  <p class="additional-content" style="display: none;">
-                    He leads and conducts research and capacity-building projects for conflict-affected regions and societies, and frequently authors and co-authors articles and manuals on the wide range of security topics covered in CCSI’s training programs. He co-managed the first UN system-wide training program on sanctions, funded by Global Affairs Canada (2012-2013), and the consultative process for the High Level Review of UN Sanctions Practices (2014) as well as the development of the Best Practices Guide for Chairs and Members of United Nations Sanctions Committees (2020) that includes guidance and policy on Gender Equality and UN Sanctions, specifically the risks of limiting UN sanctions to Conflict Related Sexual Violence (CRSV), gender competence in the UN sanctions system; and improving UN sanctions to prevent gender-related threats and violence more effectively. He has authored articles on the gender implications of sanctions, as follows: Sanctions: Gender, violence and the Security Council. Time for a rethink? (World ECR) https://www.worldecr.com/archive/sanctions-gender-violence-and-the-security-council-time-for-a-rethink/
-                 </p>
-                <button  class="read-more-link btn">Read More</button>
-              </div>
-                <div class="content-right col-md-4 col-sm-12 col-lg-4">
-                    <img src="./img/Enrico Carisch photo.jpeg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="hidd" style="height:150px;"></div>
-    <footer>
+ <footer>
       <div class="container-fluid">
           <div>
               <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 f-col">
                   <div>
-                      <img class="footer-logo" src="img/Finalized of CCSI Women done.png" alt="">
+                      <img class="footer-logo" src="img/CCSI Women_edit.png" alt="">
                   </div>
               </div>
           </div>
       </div> 
-    </footer>
+</footer> 
 
 </body>
 </html>
