@@ -12,230 +12,38 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-  <style>
- .btn{
-		display: inline-block;
-		text-decoration: none;
-		padding: 14px 40px;
-		color:#025196;
-	font-size: large;
-    font-weight: bold;
-    background-color: #fffff7;
-    border: 2px solid #699eca;
-    text-align: center;
-		border-radius: 30px;
-		border-top-right-radius: 0;           
-	   transition: 0.5s;
-	   animation-delay: 1s;
-	}
-	.btn:hover{
-	  border-top-right-radius: 30px;
-  }
-
-
-  .about .row{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    padding: 0 50px;
-    padding-bottom: 3rem;
-  }
-
-  .about .row .video-container{
-    flex: 1 1 30rem;
-    position: relative;
-  }
- @media screen and (max-width:400px){
-  .about .row .video-container img{
-    box-shadow:none;
-    width: 100%;
-    border: none;
-    border-radius:none;
-    box-shadow:none;
-  }
- 
- 
- }
-
-
-  .about .row .video-container img{
-    width: 100%;
-    border: 1.5rem solid #fff;
-    border-radius: 10px;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    height: 100%;
-    object-fit: cover;
-
-  }
- .about .row .video-container h3 span{
-  font-size: 3rem;
- }
-  .about .row .video-container h3{
-    position: absolute;
-    top: 35%; 
-    /* transform: translateY(-50%); */
-    font-size: 1.5rem;
-   background:rgba(255,255,255, 0.8);
-    width: 100%;
-    left:0%;
-    padding: 1rem 2rem;
-    text-align: center;
-    /* font-size: 3rem; */
-    color: black;
-    /* font-weight: bold; */
-  }
-  .about .row .detailsAbout{
-    flex: 1 1 20rem;
-    padding: 2rem;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    border-radius: 10px;
-
-
-  }
-  .about .row .detailsAbout h3{
-    font-size: 3rem;
-    color: #333;
-    padding: .5rem 3rem;
-
-  }
-  .about .row .detailsAbout p{
-    font-size: 1.5rem;
-    color: black;
-    padding:0 2rem;
-    line-height: 1.5;
-
-    
-  }
-  ul.a {
-  list-style-type: circle;
-  list-style-position: inside;
-  font-size: 1.5rem;
-    color: black;
-    padding:0 2rem;
-    line-height: 1.5;
-    text-align: justify
-  
-}
-ul.a li{
-  list-style-type: circle;
-  list-style-position: inside;
-  font-size: 1.3rem;
-    color: black;
-    padding:0 1.5rem;
-    line-height: 1.5;
-   
-  
-}
-
-
-
-
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
-section {
-  padding: 60px 0;
-  overflow: hidden;
-  
-}
-.align-items-stretch{
-  background-color: rgb(248, 248, 248);
-  border-radius: 10px;
-  padding:20px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.37);
-
-}
-.align-items-stretch .icon-box h4 a{
-  color: black;
-  cursor: pointer;
-  font-size: 32px;
-  font-weight: 700;
-  
-} 
-
-.align-items-stretch .icon-box h4 a:hover{
- list-style: none;
- color: #025196;
-  
-} 
-/* .section-bg {
-  background-color: #aec8f5;
-} */
-
-.section-title {
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-/* .section-title h2 {
-  font-size: 13px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  padding: 8px 20px;
-  margin: 0;
-  background: #e7f1fd;
-  color: #106eea;
-  display: inline-block;
-  text-transform: uppercase;
-  border-radius: 50px;
-} */
-
-.section-title h3 {
-  margin: 15px 0 0 0;
-  font-size: 32px;
-  font-weight: 700;
-  color: black;
-}
-
-/* .section-title h3 span {
-  color: #106eea;
-} */
-
-.section-title p {
-  margin: 15px auto 0 auto;
-  font-weight: 400;
-
-}
-
-@media (min-width: 1024px) {
-  .section-title p {
-    width: 50%;
-  }
-}
-
-
-
-  </style>
 </head>
 <body onscroll="reswize()">     
-  <div class="navigation-sticky" id="navbar_top">
-    <div class="navbar bg-light navbar-light navbar-expand-lg">
-        <div class="container">
-            <a href="#" class="navbar-brand"><img src="img/CCSI Women_edit.png" alt="logo"  class="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+    <!-- start navbar section -->  
+    <div class="navigation-sticky" id="navbar_top">
+      <div class="navbar bg-light navbar-light navbar-expand-lg">
+          <div class="container">
+              <a href="#" class="navbar-brand"><img src="img/CCSI Women_edit.png" alt="logo"  class="logo"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="index.html" class="nav-link ">Our mission</a></li>
-                    <li class="nav-item"><a href="LeaderShipAndExpirts.html" class="nav-link ">Our team</a></li>
-                    <li class="nav-item"><a href="ccsi_famaily.html" class="nav-link active ">CCSI family</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link ">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+                  <li class="nav-item"><a href="index.html" class="nav-link">Our mission</a></li>
+                  <li class="nav-item"><a href="LeaderShipAndExpirts.html" class="nav-link ">Our team</a></li>
+                  <li class="nav-item"><a href="ccsi_famaily.html" class="nav-link active">CCSI family</a></li>
+                  <li class="nav-item"><a href="contact.html" class="nav-link ">Contact</a></li>
+              </ul>
+              </div>
+          </div>
+      </div>
     </div>
-</div>
-<div class="responsive">
-  <div class="text">
-    <h1><span>CCSI family<br></span></h1>
-  </div>
-  <img src="img/background women2-01-01.jpeg" alt="" class="img-fluid">
-</div>
-   
+    <!-- end navbar section -->
 
-
+    <!-- start header section -->
+    <div class="responsive">
+      <div class="text">
+        <h1>CCSI family</h1>
+      </div>
+      <img src="img/background women2-01-01.jpeg" alt="" class="img-fluid">
+    </div>
+      <!-- end header section -->
+      
    <div class="hidd" style="height:30px;"></div>
    
      <!-- ======= Services Section ======= -->
@@ -243,9 +51,9 @@ section {
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h3>CCSI family</h3>
           <p>
-            CCSI’s network of experts has trained public and privates sector professionals of more than 50 countries on a number of issues-areas from strategic trade controls and sanctions implementation to digital transformations and international terrorism prevention. 
+            CCSI’s network of experts has trained public and privates sector professionals of more than 50 countries on a number of issues-areas from strategic trade controls and sanctions implementation to digital transformations and international terrorism prevention.
+            We  have delivered projects in partnership with numerous governmental agencies including Global Affairs Canada, the U.S. Department of State (EXBS/CTR/NDF), the Ministry of Foreign Affairs of Japan, the European Union External Action Service, the African Development Bank, the Gesellschaft für Internationale Zusammenarbeit (GIZ), and companies and institutional investors.
           </p>
         </div>
 
@@ -254,15 +62,17 @@ section {
             <div class="icon-box">
               <!-- <div class="icon"><img src="img/CCSI Women_edit.png" alt=""></i></div> -->
               <h4><a href="https://ccsi.global">CCSI Global</a></h4>
-              <p>CCSI Global was established in 2011. Since its inception, its principals have worked to attract and support international women peace and security professionals in providing training in sustainable peace and security and compliance with human rights and international humanitarian law. CCSI has delivered training programs in more than 50 countries.  https://ccsi.global</p>
+              <p>CCSI Global was established in 2011. Since its inception, its principals have worked to attract and support international women peace and security professionals in providing training in sustainable peace and security and compliance with human rights and international humanitarian law. CCSI has delivered training programs in more than 50 countries.
+                  <a href="https://ccsi.global">https://ccsi.global</a>
+                </p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <!-- <div class="icon"><img src="img/CCSI Women_edit.png" alt=""></i></div> -->
               <h4><a href=" https://ccsi.global/ccsi-africa/">CCSI Africa</a></h4>
-              <p>CCSI Africa provides training in the  full range of security issues with a team that includes, human rights and gender specialists.  CCSI trainings have included customs and border control, maritime practices, and combatting sexual and gender based violence in conflict zones.
-                 https://ccsi.global/ccsi-africa/
+              <p>CCSI Africa provides training in the full range of security issues with a team that includes, human rights and gender specialists. CCSI trainings have included customs and border control, maritime practices, and combatting sexual and gender based violence in conflict zones.
+                 <a href=" https://ccsi.global/ccsi-africa/"> https://ccsi.global/ccsi-africa/</a>
                </p>
             </div>
           </div>
@@ -271,7 +81,7 @@ section {
               <!-- <div class="icon"><img src="img/CCSI Women_edit.png" alt=""></i></div> -->
               <h4><a href="https://www.ccsiapac.global">CCSI APAC </a></h4>
               <p>CCSI APAC is led by Maiko Takeuchi, a Specialist in Strategic Trade Controls and Non-proliferation, who has twenty years of experience in the United Nations and the Japanese Government. CCSI APAC’s team of experts supports Governments and industries in international and national security, including  through the non-proliferation of missiles, weapons of mass destruction, and conventional weapons.
-                 https://www.ccsiapac.global
+                 <a href="https://www.ccsiapac.global">https://www.ccsiapac.global</a>
                 </p>
             </div>
           </div>
@@ -280,12 +90,8 @@ section {
               <!-- <div class="icon"><img src="img/CCSI Women_edit.png" alt=""></i></div> -->
               <h4><a href=""> CCSI Canada </a></h4>
               <p>
-                CCSI Canada is led by Caterina Ventura who is an international lawyer with extensive experience in a
-		range of political, economic and human rights issues. CCSI Canada works to enhance best practices for the application of
-		      strategic trade controls and sanctions, ensuring  that their enforcement is respectful and fully compliant with
-		      human rights and international humanitarian law, and seeks to promote women’s equality and empowerment in peace
-		      and security
-
+                CCSI Canada is led by Caterina Ventura who is an international lawyer with extensive experience in a range of political, economic and human rights issues. CCSI Canada works to enhance best practices for the application of strategic trade controls and sanctions, ensuring that their enforcement is respectful and fully compliant with human rights and international humanitarian law, and seeks to promote women’s equality and empowerment in peace and security.
+                <a href="https://atefah.github.io/CCSI_Canada/">https://atefah.github.io/CCSI_Canada/</a>
               </p>
             </div>
           </div>
@@ -293,23 +99,24 @@ section {
         </div>
 
       </div>
-    </section><!-- End Services Section -->
-  
-
-  <div class="hidd" style="height:30px;"></div>
+    </section>
+    <!-- End Services Section -->
 
 <div class="hidd" style="height:50px;"></div>
- <footer>
-  <div class="container-fluid">
-      <div class="row">
-          <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 f-col">
-              <div>
-                  <img class="footer-logo" src="img/CCSI Women_edit.png" alt="">
-              </div>
-          </div>
-      </div>
-  </div> 
-</footer>
+
+  <!--start   footer -->
+  <footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 f-col">
+                <div>
+                    <img class="footer-logo" src="img/CCSI Women_edit.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div> 
+  </footer>
+  <!--end  footer -->
 
 </body>
 </html>
