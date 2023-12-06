@@ -289,14 +289,14 @@ a{
   }
 
   .team .member .member-info h1{
-	font-weight: 900px;
+	font-weight: bold;
 	margin-bottom: 5px;
 	font-size: 22px;
 	color: black;
 	letter-spacing:-0.1px;
   }
    .team .member .member-info span{
-	font-size: 19px;
+	font-size: 17px;
 	font-weight: 700px;
 	color:#025196;
 	letter-spacing:-0.2px;
