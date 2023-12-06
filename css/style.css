@@ -210,19 +210,14 @@ h1,h2,h3,h4,h5{
 	font-weight: 500px;
     color: black;
     padding:0 2rem;
-    line-height: 1.5;
+    line-height: 1.5em;
     text-align: left
   
 }
-/* ul.a li{
-	list-style-type: circle;
-	list-style-position: inside;
-	font-size: 22px;
-	font-weight: 500px;
-    color: black;
+ul.a li{
+	font-size: 21px;
     padding:0 1.5rem;
-    line-height: 1.5;
-} */
+}
 /* read more p style  */
 
 
