@@ -22,7 +22,7 @@ p{
 	}
 
 h1,h2,h3,h4,h5{
-	letter-spacing: 3px;
+	/* letter-spacing: 3px; */
 	font-family: 'lato';
 	text-align: justify;
 }
@@ -35,7 +35,7 @@ h1,h2,h3,h4,h5{
 
   /* header style*/
 
-  .img-fluid{
+  /* .img-fluid{
 	width: 100%;
 	height: auto;
 	}
@@ -50,61 +50,32 @@ h1,h2,h3,h4,h5{
 		top:400px;
 		left: 60px;
    
-	  }
+	  } */
 	
-	@media screen and (max-width:500px){
-	.responsive{
-		width: 100%;
-		display: block;
-		}
-	.responsive .text{
-			position: absolute;
-			top:230px;
-			width: 100%;
-			left: -80px;
-		}
-	.responsive .text h1{
-		display: none;
-		font-weight: 300px;
-		color: white;
-		font-size: 10px;		
-	}
 	
-}
 
 /*our team our family conntact us*/
+.responsive{
+	background: url('../img/background\ women2-01-01.png') no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100vh;
 
-.responsive .text h2{
-	font-size: 50px;
+}
+.responsive .text h1{
+	font-size: 30px;
 	font-weight: bold;
 	text-align: justify;
 	color:#025196;
   }
   .responsive .text{ 
 	position: absolute;
-	top:400px;
-	left: 60px;
-  
+	top:500px;
+	left: 90px;
 	}
-	@media screen and (max-width:500px){
-  .responsive{
-	  width: 100%;
-	  display: block;
-	  }
-  .responsive .text{
-		  position: absolute;
-		  top:230px;
-		  width: 100%;
-		  left: -80px;
-	  }
-  .responsive .text h2{
-	  display: block;
-	  font-weight: 300px;
-	  color: rgb(138, 183, 221);
-	  font-size: 10px;		
-  }
-  
-}
+
+	
+	
 
 /* navbar section */
 .logo { width: 400px;}
@@ -160,14 +131,15 @@ h1,h2,h3,h4,h5{
   .about .row .image-container h3{
     position: absolute;
     top: 35%; 
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     background:rgba(255,255,255, 0.8);
     width: 100%;
     left:0%;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
+	font-size: bold;
     text-align: center;
-    color: black;
-	font-weight: 900px;
+    color:#025196;
+	/* font-weight: 900px; */
   }
   .about .row .detailsAbout{
     flex: 1 1 20rem;
@@ -226,21 +198,50 @@ ul.a li{
 	width: 50%;
 	margin: auto;
 	box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .2);
-	padding: 50px;
+	padding: 20px 30px;
 	border-radius: 10px;
 
   }
 .logoAndWebsite p{
 	text-align: center;
-	color:black;
+	/* color:black; */
 	font-size: 20px;
 	text-align: justify;
 	font-family: 'lato';
 }
+.logoAndWebsite p a{
+	color: #025196;
+}
+.logoAndWebsite p a:hover{
+	text-decoration: none;
+}
+
+.logoAndWebsite .socialMedia{
+	display: flex; 
+}
+.logoAndWebsite .socialMedia{
+	font-size: 30px;
+}
+.logoAndWebsite .socialMedia a i{
+	padding: 0px 5px;
+	color: #025196;
+	text-decoration: none;
+   }
+
+   .logoAndWebsite .socialMedia a i:hover{
+	color: rgb(225, 91, 19);
+}
+
 /* end index  html*/
 
 
 /* start leadership .html style*/
+
+
+ #more1, #more2, #more3, #more4, #more5, #more6, #more7, #more8, #more9, #more10, #more11, #more12{
+  display: none;
+ } 
+
 .row{
 	margin-top: 30px;
 }
@@ -319,9 +320,15 @@ a{
 	color:black;
 	text-align: left;
   }
-  .team .member .member-info p .additional-content{
-	margin-top: -70px;
+  .team .member .member-info p span{
+	font-size: 17px;
+	font-weight: 500px;
+	color:black;
+	text-align: left;
   }
+  /* .team .member .member-info p {
+	margin-top: -70px;
+  } */
  section{
 	padding: 60px 0;
 	overflow: hidden;
