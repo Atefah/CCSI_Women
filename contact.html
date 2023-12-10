@@ -13,27 +13,114 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <style>
-   .btn{
+    /*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+.contact{
+    background: url('./img/background\ women2-01-01.jpeg') no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    
+}
+.head{
+    /* background-color: red; */
+    border-radius: 5px;
+    margin-top: -8px;
+    color:#025196;
+	font-size: large;
+	font-weight: bold;
+}
+.card{
+    background-color: transparent;
+    margin-top: 80px;
+    border: none;
+    /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1); */
+}
+
+.contact .php-email-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid #56a4e8;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #106eea;
+}
+
+.contact .php-email-form input {
+  padding: 10px 15px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .php-email-form button[type=submit] {
         text-align:center;
         display:inline-block;
         color:#333333;
+        background-color: transparent;
         margin:5px 4px 5px 10px;
-        padding:3px 10px;
-        border: 8px inset #FFC100;
-        
+        padding:5px;
+        border: 8px inset rgb(138, 183, 221);
         text-decoration:none;
         font-weight: bold;
-      }
-      .btn:hover{
-        border: 8px inset #56a4e8;
+ 
+     
+}
+
+.contact .php-email-form button[type=submit]:hover {
+    border: 8px inset rgb(225, 91, 19);
         color:#333333;
         font-weight: bold;
-      }
-    </style>
-    </head>
-  <body onscroll="reswize()">     
-      <!-- start navbar section -->  
-      <div class="navigation-sticky" id="navbar_top">
+}
+@media screen and (max-width:412px){
+.contact{
+    width: 100%;
+    height: 100vh;
+    background-image:none;
+    background-color: #B9CEE3;
+}
+.card{
+   
+    margin:auto;
+    border: none;
+}
+
+}
+
+@media screen and (max-width:412px){
+.contact{
+    width: 100%;
+    height: 100vh;
+    background-image:none;
+    background-color: #B9CEE3;
+}
+.card{
+   
+    margin:auto;
+    border: none;
+}
+
+}
+
+
+
+  </style>
+</head>
+<body>
+    <!-- start navbar section -->  
+    <div class="navigation-sticky" id="navbar_top">
         <div class="navbar bg-light navbar-light navbar-expand-lg">
             <div class="container">
                 <a href="#" class="navbar-brand"><img src="img/CCSI Women_edit.png" alt="logo"  class="logo"></a>
@@ -52,82 +139,87 @@
         </div>
       </div>
       <!-- end navbar section -->
-  
-      <!-- start header section -->
-      <div class="responsive">
-        <div class="text">
-          <h2>Contact us</h2>
-        </div>
-        <img src="img/background women2-01-01.jpeg" alt="" class="img-fluid">
-      </div>
-        <!-- end header section -->
+      <div class="hidd" style="height:10px;"></div>
+   <!-- ======= Contact Section ======= -->
+    <section class="contact py-0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-4">
+                   <div class="card">
+                       <div class="card-body">
+                            <div class="row pb-0">
+                                <div class="col-lg-12">
+                                    <div class="head text-center py-3">
+                                        <h3 class="text-center font-weight-bold" style="color: #025196; font-size:30px;">contact us</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" >
 
- <div class="hidd" style="height:100px;"></div>
-  <section class="contactsection">
-    
-        <div class="containerSection">
-            <div class="contactInfo">
-                <div>
-                  <h1>contact info</h1>
-                  <ul class="information">
-                      <li>
-                        <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
-                        <span>New York, New York</span>
-                      </li>
-                      <li>
-                        <span><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
-                        <span>women@ccsi.global</span>
-                      </li>
-                  </ul>
+                                <div class="col-lg-5 col-sm-12 col-md-6">
+                                    <div class="row">
+                                        <div class="col-lg-1">
+                                            <i class="fas fa-map-marker-alt" style="color: #025196;"></i>
+                                         </div>
+                                        <div class="col-lg-10">
+                                            <h6 class="font-weight-bold " style="color: #025196; font-size: 16px;">New York, New York</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--two-->
+                                <div class="offset-1 col-lg-5 col-lg-5 col-sm-12 col-md-6">
+                                    <div class="row">
+                                        <div class="col-lg-1">
+                                            <i class="fa-solid fa-envelope" aria-hidden="true" style="color: #025196;"></i>
+                                         </div>
+                                        <div class="col-lg-10">
+                                            <h6 class="font-weight-bold " style="color: #025196; font-size: 16px;">women@ccsi.global</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--row 2-->
+                            <div class="form">
+                                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                    <div class="row">
+                                      <div class="col form-group">
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                      </div>
+                                      <div class="col form-group">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                                      </div>
+                                    </div>
+                                    <div class="form-group">
+                                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                                    </div>
+                                    <div class="form-group">
+                                      <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                    </div>
+                                    <div class="text-center"><button type="submit">Send Message</button></div>
+                                </form>
+                            </div>
+                            
+                       </div>
+                   </div>
                 </div>
-                <ul class="sci">
-                  <li><a href=""><i class="fa-brands fa-twitter"></i></i></a></li>
-                  <li><a href=""><i class="fa-brands fa-facebook"></i></i></a></li>
-                  <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
+                <div class="col-lg-7"></div>
             </div>
-            <div class="contactForm">
-              <h2>Send A Message</h2>
-              <div class="formBox">
-
-                <div class="inputBox w50">
-                  <input type="text" required placeholder="First Name">
-                </div>
-                <div class="inputBox w50">
-                  <input type="text" required placeholder="Last Name">
-                </div>
-                <div class="inputBox w50">
-                  <input type="email" required placeholder="Email Adress">
-                </div>
-                <div class="inputBox w50">
-                  <input type="number" required placeholder="Mobile Number">
-                </div>
-
-                <div class="inputBox w100">
-                  <textarea required placeholder="write your message here....."></textarea>
-                </div>
-                <div class="inputBox w100">
-                 <button class="btn">Send</button>
-                </div>
-
-              </div>
-            </div>
         </div>
-  </section>
-  
-  <div class="hidd" style="height:150px;"></div>
+    </section>
+  <!-- End Contact Section -->
   <footer>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 f-col">
                 <div>
-                    <img class="footer-logo" src="img/Finalized of CCSI Women done.png" alt="">
+                    <img class="footer-logo" src="img/CCSI Women_edit.png" alt="">
                 </div>
             </div>
         </div>
     </div> 
   </footer>
-
 </body>
 </html>
 <script type="text/javascript" src="js/script.js"></script>
