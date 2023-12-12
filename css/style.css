@@ -201,7 +201,7 @@ h1,h2,h3,h4,h5{
   }
   .about .row .detailsAbout{
     flex: 1 1 20rem;
-    padding: 2rem;
+    padding:3rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     border-radius: 10px;
   }
