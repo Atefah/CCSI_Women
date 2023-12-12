@@ -226,7 +226,7 @@ h1,h2,h3,h4,h5{
 
   }
   .about .row .detailsAbout p{
-	font-size: 21px;
+	font-size: 17px;
 	font-weight: 500px;
 	color:#025196;
 	text-align: left;
