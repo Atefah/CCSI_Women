@@ -7,7 +7,7 @@
 }
 p{
     font-size: 20px;
-	word-spacing: normal;
+	/* word-spacing: normal; */
 	text-align: justify;
 	overflow: hidden;	
 	color: black;
@@ -22,89 +22,118 @@ p{
 	}
 
 h1,h2,h3,h4,h5{
-	letter-spacing: 3px;
+	/* letter-spacing: 3px; */
 	font-family: 'lato';
 	text-align: justify;
 }
 
-
-/* public btn for all of page */
-
-
-/* end public btn for all of page */
-
-  /* header style*/
-
-  .img-fluid{
-	width: 100%;
-	height: auto;
-	}
-	.responsive .text h1{
-		font-size: 25px;
-		font-weight: bold;
-		text-align: justify;
-		color:#025196;
-	}
-	.responsive .text{ 
-		position: absolute;
-		top:400px;
-		left: 60px;
-   
-	  }
-	
-	@media screen and (max-width:500px){
-	.responsive{
-		width: 100%;
-		display: block;
-		}
-	.responsive .text{
-			position: absolute;
-			top:230px;
-			width: 100%;
-			left: -80px;
-		}
-	.responsive .text h1{
-		display: none;
-		font-weight: 300px;
-		color: white;
-		font-size: 10px;		
-	}
-	
-}
+  /* header style*/	
 
 /*our team our family conntact us*/
-
-.responsive .text h2{
-	font-size: 50px;
-	font-weight: bold;
-	text-align: justify;
-	color:#025196;
-  }
-  .responsive .text{ 
-	position: absolute;
-	top:400px;
-	left: 60px;
-  
-	}
-	@media screen and (max-width:500px){
-  .responsive{
-	  width: 100%;
-	  display: block;
-	  }
-  .responsive .text{
-		  position: absolute;
-		  top:230px;
-		  width: 100%;
-		  left: -80px;
-	  }
-  .responsive .text h2{
-	  display: block;
-	  font-weight: 300px;
-	  color: rgb(138, 183, 221);
-	  font-size: 10px;		
-  }
-  
+.masthead{
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100vh;
+	
 }
+.content{
+	text-align: left;
+	margin-top: 250px;
+	margin-left: 50px;
+}
+.content h1{
+		font-size: 35px;
+		font-weight: bold;
+		text-align: left;
+		color:#025196;
+}
+@media screen and (max-width:412px){
+  .masthead{
+	width: 100%;
+	height:30vh;
+}
+.content h1{
+	text-align: left;
+	
+}
+.content h1{
+  	margin-top: -100px;
+	margin-left: -10px;
+	font-size: 20px;
+}
+
+ }
+
+ @media screen and (max-width:414px){
+  .masthead{
+
+	width: 100%;
+	height:30vh;
+}
+.content h1{
+	text-align: left;
+}
+.content h1{
+		margin-top: -100px;
+		margin-left: -10px;
+		font-size: 20px;
+}
+
+ }
+
+ @media screen and (max-width:540px){
+  .masthead{
+	width: 100%;
+	height:45vh;
+}
+.content h1{
+	text-align: left;
+}
+.content h1{
+ 	 margin-top: -100px;
+	margin-left: -10px;
+	font-size: 20px;
+}
+
+ }
+
+ @media screen and (max-width:912px){
+	.masthead{
+	  width: 100%;
+	  height:45vh;
+  }
+  .content h1{
+	  text-align: left;
+  }
+  .content h1{
+		margin-top: -100px;
+	  margin-left: -10px;
+	  font-size: 20px;
+  }
+  
+   }
+
+
+ @media screen and (max-width:1024px){
+	.masthead{
+	  width: 100%;
+	  height:45vh;
+  }
+  .content h1{
+	  text-align: left;
+  }
+  .content h1{
+		margin-top: -100px;
+	  margin-left: -10px;
+	  font-size: 20px;
+  }
+  
+   }
+
+
+
+	
+	
 
 /* navbar section */
 .logo { width: 400px;}
@@ -160,14 +189,15 @@ h1,h2,h3,h4,h5{
   .about .row .image-container h3{
     position: absolute;
     top: 35%; 
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     background:rgba(255,255,255, 0.8);
     width: 100%;
     left:0%;
-    padding: 1rem 2rem;
+    padding: 2rem;
+	font-size: bold;
     text-align: center;
-    color: black;
-	font-weight: 900px;
+    color:#025196;
+	/* font-weight: 900px; */
   }
   .about .row .detailsAbout{
     flex: 1 1 20rem;
@@ -176,12 +206,7 @@ h1,h2,h3,h4,h5{
     border-radius: 10px;
   }
 
-  .about .row .detailsAbout p{
-	font-size: 16px;
-	font-weight: 500px;
-	color:black;
-	text-align: justify;
-  }
+  
 
   @media screen and (max-width:400px){
   .about .row .image-container img{
@@ -201,30 +226,28 @@ h1,h2,h3,h4,h5{
 
   }
   .about .row .detailsAbout p{
-    font-size: 1.5rem;
-    color: black;
-    padding:0 2rem;
-    line-height: 1.5;
+	font-size: 19px;
+	font-weight: 500px;
+	color:#025196;
+	text-align: left;
   }
 
   /* read more p style  */
   ul.a {
     list-style-type: circle;
     list-style-position: inside;
-    font-size: 1.5rem;
-    color: black;
+    font-size: 19px;
+	font-weight: 500px;
+	color:#025196;
     padding:0 2rem;
-    line-height: 1.5;
-    text-align: justify
+    line-height: 1.5em;
+    text-align: left
   
 }
 ul.a li{
-  list-style-type: circle;
-  list-style-position: inside;
-  font-size: 1.3rem;
-    color: black;
+	font-size: 21px;
     padding:0 1.5rem;
-    line-height: 1.5;
+	text-align: left
 }
 /* read more p style  */
 
@@ -234,21 +257,50 @@ ul.a li{
 	width: 50%;
 	margin: auto;
 	box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .2);
-	padding: 50px;
+	padding: 20px 30px;
 	border-radius: 10px;
 
   }
 .logoAndWebsite p{
 	text-align: center;
-	color:#025196;
+	/* color:black; */
 	font-size: 20px;
 	text-align: justify;
 	font-family: 'lato';
 }
+.logoAndWebsite p a{
+	color: #025196;
+}
+.logoAndWebsite p a:hover{
+	text-decoration: none;
+}
+
+.logoAndWebsite .socialMedia{
+	display: flex; 
+}
+.logoAndWebsite .socialMedia{
+	font-size: 30px;
+}
+.logoAndWebsite .socialMedia a i{
+	padding: 0px 5px;
+	color: #025196;
+	text-decoration: none;
+   }
+
+   .logoAndWebsite .socialMedia a i:hover{
+	color: rgb(225, 91, 19);
+}
+
 /* end index  html*/
 
 
 /* start leadership .html style*/
+
+
+ #more1, #more2, #more3, #more4, #more5, #more6, #more7, #more8, #more9, #more10, #more11, #more12{
+  display: none;
+ } 
+
 .row{
 	margin-top: 30px;
 }
@@ -327,9 +379,15 @@ a{
 	color:black;
 	text-align: left;
   }
-  .team .member .member-info p .additional-content{
-	margin-top: -70px;
+  .team .member .member-info p span{
+	font-size: 17px;
+	font-weight: 500px;
+	color:black;
+	text-align: left;
   }
+  /* .team .member .member-info p {
+	margin-top: -70px;
+  } */
  section{
 	padding: 60px 0;
 	overflow: hidden;
@@ -359,7 +417,7 @@ section {
 	font-weight: 500;
 	margin: auto;
 	/* text-align:center; */
-	word-spacing: -1.5px;
+	/* word-spacing: -1px; */
   }
   .align-items-stretch{
 	background-color: rgb(248, 248, 248);
@@ -381,7 +439,7 @@ section {
 	font-size: 19px;
 	font-weight: 500;
 	text-align:left;
-	word-spacing: -1.5px;
+	/* word-spacing: -1.5px; */
   }
   
   .align-items-stretch .icon-box h4 a:hover{
