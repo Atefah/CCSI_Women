@@ -136,10 +136,10 @@ footer{
 }
  /* logo and website*/
  .logoAndWebsite{
-	width: 50%;
+	width: 48%;
 	margin: auto;
 	box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .2);
-	padding: 20px 30px;
+	padding: 30px;
 	border-radius: 10px;
 
   }
