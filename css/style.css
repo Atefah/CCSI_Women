@@ -246,6 +246,20 @@ footer{
 	padding: 25px 2px;
   }
 
+  .team .member .member-info .btn{
+	text-align:center;
+	display:inline-block;
+	color:#333333;
+	padding:3px;
+	border: 8px inset rgb(138, 183, 221);
+	text-decoration:none;
+	font-weight: bold;
+	}
+	.team .member .member-info .btn:hover{
+	border: 8px inset rgb(225, 91, 19);
+	color:#333333;
+	font-weight: bold;
+	}  
   .team .member .member-info h1{
 	font-weight: bold;
 	margin-bottom: 5px;
