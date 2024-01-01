@@ -23,12 +23,12 @@ footer{
 
 /*our team our family conntact us*/
 .banner{
-	position: relative;
+	/* position: relative;
 	background-image: url('../img/December\ finalized\ first\ header-01.jpg');
 	min-height: 100vh;
 	background-size: cover;
 	background-position: center;
-	padding: 150px 0px 0px 0px;
+	padding: 150px 0px 0px 0px; */
   }
   .banner h3{
 	font-weight: bold;
@@ -81,7 +81,7 @@ footer{
 
   .about .row .image-container img{
     width: 100%;
-    border: 1.5rem solid #fff;
+    border: 1em solid #fff;
     border-radius: 10px;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     height: 100%;
@@ -524,11 +524,11 @@ footer{
   }
   
   }
-  
-  @media screen and (max-width:1024px){
-	.banner {
+/*   
+  @media screen and (max-width:1024px){ */
+	/* .banner {
 		  min-height: 100vh;
 	 
-  }
+  } */
   
-  }
+  /* } */
