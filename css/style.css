@@ -13,7 +13,9 @@ p{
 	color: black;
 }
 footer{
-	background-color: rgb(248, 248, 248);
+	/* background-color: rgb(248, 248, 248); */
+	background-color: #ffffff;
+	border-top: 1px solid rgb(232, 230, 230);
 }
 .footer-logo{  width:100%;}
 
@@ -23,17 +25,18 @@ footer{
 
 /*our team our family conntact us*/
 .banner{
-	/* position: relative;
-	background-image: url('../img/December\ finalized\ first\ header-01.jpg');
+	position: relative;
+	background-image: url('../img/image1\ finalized\ Jan1-01.jpg');
 	min-height: 100vh;
 	background-size: cover;
 	background-position: center;
-	padding: 150px 0px 0px 0px; */
+	padding: 150px 0px 0px 0px;
   }
   .banner h3{
-	font-weight: bold;
-	color:#025196;
-	font-size: 35px;
+	font-weight:500;
+	color:white;
+	font-size:30px;
+	font-family: 'lato';
   }
   
 
@@ -41,7 +44,8 @@ footer{
 .logo { width: 400px;}
 
 #navbar_top {
-		background-color: rgb(248, 248, 248);
+		background-color:#ffffff;
+		border-bottom: 1px solid rgb(232, 230, 230);
 	}
 
 
@@ -68,22 +72,22 @@ footer{
 .about .row{
     display: flex;
     align-items: center;
-    gap: 2rem;
+    /* gap: 2rem; */
     flex-wrap: wrap;
-    padding: 0 50px;
-    padding-bottom: 3rem;
+    padding: 0px 100px;
+    /* padding-bottom: 3rem; */
   }
 
   .about .row .image-container{
-    flex: 1 1 30rem;
+    flex: 1 1 20rem;
     position: relative;
   }
 
   .about .row .image-container img{
     width: 100%;
-    border: 1em solid #fff;
-    border-radius: 10px;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    /* border: 0.5rem solid #fff; */
+    /* border-radius: 10px; */
+    /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1); */
     height: 100%;
     object-fit: cover;
   }
@@ -98,18 +102,19 @@ footer{
     padding: 2rem;
 	font-size: bold;
     text-align: center;
-    color:#025196;
+    color:black;
 	
   }
   .about .row .detailsAbout{
-    flex: 1 1 20rem;
+    /* flex: 1 1 20rem; */
     padding: 2rem;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    border-radius: 10px;
+    /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: 10px; */
   }
 
   .about .row .detailsAbout p{
-	color:#025196;
+	color:black;
+	font-size: 19px;
   }
   .about .row .detailsAbout .btn{
 	text-align:center;
@@ -185,7 +190,7 @@ footer{
 /* start leadership .html style*/
 
 .align-items-stretch{
-	background-color: rgb(248, 248, 248);
+	background-color: #ffffff;
 	border-radius: 10px;
 	padding:10px;
 	box-shadow: 0 8px 6px 0 rgba(0, 0, 0, 0.37);
@@ -207,6 +212,8 @@ footer{
   .team .member .member-img{
 	position: relative;
 	overflow: hidden;
+	width: 100%;
+	border-radius: 10px;
   }
   .team .member .social{
 	position: absolute;
@@ -284,7 +291,8 @@ footer{
 	position: relative;
 	width: 70%;
 	margin: 20px auto 0 auto;
-	background-color: rgb(248, 248, 248);
+	/* background-color: rgb(248, 248, 248); */
+	background-color: #ffffff;
    
 
 }
@@ -315,7 +323,7 @@ footer{
 .contact .info-box {
 	color: #444444;
 	text-align: center;
-	box-shadow: 10px 10px 30px rgba(214, 215, 216, 0.3);
+	box-shadow: 3px 3px 3px rgba(214, 215, 216, 0.3);
 	padding: 20px 0 30px 0;
   }
   
@@ -443,15 +451,15 @@ footer{
   @media screen and (max-width:375px){
 	.banner {
 		position: relative;
-		background-image: url('../img/responsive-background.jpeg');
+		background-image: url('../img/image1\ finalized\ Jan1-01.jpg');
 		/* min-height: 35vh; */
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
-		padding: 220px 0px 0px 0px;
+		padding: 10px 0px 0px 0px;
   }
   .banner h3{
-	font-size: 20px;
+	font-size: 10px;
   }
 
   .logo { width: 170px;}
@@ -473,15 +481,15 @@ footer{
   @media screen and (max-width:430px){
 	.banner {
 		position: relative;
-		background-image: url('../img/responsive-background.jpeg');
+		background-image: url('../img/image1\ finalized\ Jan1-01.jpg');
 		/* min-height: 35vh; */
-		background-size: cover;
+		/* background-size: cover;
 		background-position: center;
-		background-repeat: no-repeat;
-		padding: 220px 0px 0px 0px;
+		background-repeat: no-repeat; */
+		padding: 100px 0px 0px 0px;
   }
   .banner h3{
-	font-size: 20px;
+	font-size: 10px;
   }
   .logo { width: 170px;}
   
@@ -491,7 +499,7 @@ footer{
 	  min-height: 40vh;
   }
   .banner h3{
-	font-size: 20px;
+	font-size: 10px;
   }
 	 }
   @media screen and (max-width:768px){
@@ -524,11 +532,15 @@ footer{
   }
   
   }
-/*   
-  @media screen and (max-width:1024px){ */
-	/* .banner {
-		  min-height: 100vh;
-	 
-  } */
   
-  /* } */
+  @media screen and (max-width:1024px){
+
+	.about .row .image-container h3{
+		
+		font-size: 1rem;
+		width: 100%;
+		
+		
+	  }
+  
+ } 
