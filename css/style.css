@@ -167,40 +167,6 @@ ul.a {
 	width: 100%;
 	border-radius: 10px;
   }
-  .team .member .social{
-	position: absolute;
-	left: 0;
-	bottom: 30px;
-	right: 0;
-	opacity: 0;
-	transition: ease-in-out 0.3S;
-	text-align: center;
-  }
-  .team .member:hover .social{
-	  opacity: 1;
-	  bottom: 15px;
-  }
- .team .member .social a{
-	color: #11111111;
-	margin: 0 2px;
-	padding-top: 7px;
-	border-radius: 50px;
-	width: 36px;
-	height: 36px;
-	background: rgb(225, 91, 19);
-	display: inline-block;
-	text-decoration: none;
-	transition: ease-in-out 0.3s;
-	color: #fff;
-
-  } 
-
- .team .member .social a:hover{
-	background-color:#11111111 ;
-  }
-  .team .member .social i{
-	font-size: 18px;
-  } 
   .team .member .member-info{
 	padding: 25px 2px;
   }
@@ -274,7 +240,7 @@ ul.a {
 .contact .info-box {
 	color: #444444;
 	text-align: center;
-	box-shadow: 3px 3px 3px rgba(214, 215, 216, 0.3);
+	box-shadow: 1px 1px 1px rgba(214, 215, 216, 0.3);
 	padding: 20px 0 30px 0;
   }
   
@@ -301,7 +267,7 @@ ul.a {
   }
   
   .contact .php-email-form {
-	box-shadow: 0 0 30px rgba(214, 215, 216, 0.4);
+	box-shadow: 1px 1px 1px rgba(214, 215, 216, 0.3);
 	padding: 30px;
   }
   
