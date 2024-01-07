@@ -235,12 +235,12 @@
           // add padding top to show content behind navbar
           navbar_height = document.querySelector('.navbar').offsetHeight;
           document.body.style.paddingTop = navbar_height + 'px';
-          document.getElementById('navbar_top').style.backgroundColor="rgb(248, 248, 248)";
+          document.getElementById('navbar_top').style.backgroundColor="#ffffff;";
           // document.getElementById('link').style.color="black";
           
         } else {
           document.getElementById('navbar_top').classList.remove('fixed-top');
-          document.getElementById('navbar_top').style.backgroundColor="#fffff7";
+          document.getElementById('navbar_top').style.backgroundColor="#ffffff;";
           // document.getElementById('link').style.color="white";
          
            // remove padding top from body
